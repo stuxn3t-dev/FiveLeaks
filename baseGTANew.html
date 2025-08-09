@@ -1,0 +1,506 @@
+<html lang="fr" style="height: 100%;"><head>
+  <!-- Google Tag Manager -->
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-N68NLSBW"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N68NLSBW');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FiveLeaks™</title>
+  <meta name="description" content="Explorez les ressources FiveM gratuites et leaks sur FiveLeaks.">
+  <meta name="keywords" content="FiveLeaks, FiveM, Scripts FiveM, Ressources FiveM, Leaks FiveM, Mapping FiveM, Mods FiveM, Scripts ESX, QBCore, FiveM France, FiveCFX, Téléchargement FiveM, Gabz, okok, Molo, FStore, Hunterhax, Loaf, JG Scripts, Codesign, Nopixel, Mythic, London Studios, Rcore, T1ger, Mxn Scripts">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="FiveLeaks - Base GTANew Rework">
+  <meta property="og:description" content="Base GTANew Rework">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="FiveLeaks">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="logo-FL.png" type="image/png">
+
+  
+
+
+  <style>
+            /* Apply Montserrat globally */
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    body {
+      background-color: #1c1b1c;
+      color: white;
+    }
+    .text-accent {
+      color: #f40552;
+    }
+    .bg-accent {
+      background-color: #f40552;
+    }
+    .hover\:bg-accent-dark:hover {
+      background-color: #c30444;
+    }
+  </style>
+<script>
+  const header = document.getElementById('mainHeader');
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > 20) {
+      header.classList.remove('bg-opacity-100');
+      header.classList.add('bg-opacity-70');
+    } else {
+      header.classList.add('bg-opacity-100');
+      header.classList.remove('bg-opacity-70');
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.invisible{visibility:hidden}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.left-0{left:0px}.top-0{top:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mb-10{margin-bottom:2.5rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.h-8{height:2rem}.h-20{height:5rem}.max-h-\[600px\]{max-height:600px}.max-h-\[450px\]{max-height:450px}.max-h-\[500px\]{max-height:500px}.min-h-\[20px\]{min-height:20px}.min-h-\[400px\]{min-height:400px}.w-48{width:12rem}.w-auto{width:auto}.w-full{width:100%}.w-20{width:5rem}.w-24{width:6rem}.max-w-7xl{max-width:80rem}.max-w-6xl{max-width:72rem}.max-w-full{max-width:100%}.flex-1{flex:1 1 0%}.cursor-pointer{cursor:pointer}.resize-y{resize:vertical}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-auto{overflow:auto}.overflow-y-auto{overflow-y:auto}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border-2{border-width:2px}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#f40552\]{--tw-border-opacity:1;border-color:rgb(244 5 82 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.bg-\[\#1c1b1c\]{--tw-bg-opacity:1;background-color:rgb(28 27 28 / var(--tw-bg-opacity, 1))}.bg-\[\#262526\]{--tw-bg-opacity:1;background-color:rgb(38 37 38 / var(--tw-bg-opacity, 1))}.bg-\[\#5865F2\]{--tw-bg-opacity:1;background-color:rgb(88 101 242 / var(--tw-bg-opacity, 1))}.bg-opacity-100{--tw-bg-opacity:1}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-2{padding:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-left{text-align:left}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-normal{line-height:1.5}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.opacity-0{opacity:0}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.hover\:border-\[\#f40552\]:hover{--tw-border-opacity:1;border-color:rgb(244 5 82 / var(--tw-border-opacity, 1))}.hover\:bg-\[\#404EED\]:hover{--tw-bg-opacity:1;background-color:rgb(64 78 237 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.pgV-E-68K-A.L.W.O/am=hMA/d=0/rs=AN8SPfoMSCsz74287nno-gZmD_8fI6XKww/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.fr.MbEex8udwPM.O/am=AAAE/d=1/exm=el_conf/ed=1/rs=AN8SPfpuXaf7RpUsC6ZaBc_pJC7RYLmQVw/m=el_main"></script></head>
+
+
+<body class="font-sans" style="position: relative; min-height: 100%; top: 0px;">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N68NLSBW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="mainHeader" class="bg-[#1c1b1c] border-b-2 border-[#f40552] sticky top-0 z-50 transition-opacity duration-300 backdrop-blur bg-opacity-100">
+
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+<!-- Logo -->
+<a href="index.html" class="flex items-center space-x-3">
+  <span class="text-2xl font-bold text-accent">FiveLeaks</span>
+</a>
+
+
+
+    <!-- Nav Desktop -->
+    <nav class="hidden md:flex items-center space-x-6 relative">
+
+      <!-- Accueil -->
+      <a href="index.html" class="text-white hover:text-accent transition font-semibold">Accueil</a>
+
+    <a href="outils.html" class="text-white hover:text-accent transition font-semibold">Outils</a>
+
+        <a href="faq.html" class="text-white hover:text-accent transition font-semibold">FAQ</a>
+
+                <a href="https://fivecfx.com/vip.php" class="text-white hover:text-accent transition font-semibold">VIP</a>
+
+      <!-- Dropdown Catégories -->
+      <div class="relative" id="desktopCatDropdownWrapper">
+        <button id="desktopCatBtn" class="text-white hover:text-accent font-semibold flex items-center space-x-1 focus:outline-none" aria-expanded="false" aria-controls="desktopCatMenu" type="button">
+          <span>Catégories</span>
+          <i class="fa fa-chevron-down text-xs mt-0.5"></i>
+        </button>
+        <div id="desktopCatMenu" class="absolute left-0 mt-2 w-48 bg-[#262526] rounded shadow-lg opacity-0 invisible transition-opacity z-50">
+                      <a href="/categorie.php?id=1" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Bases            </a>
+                      <a href="/categorie.php?id=9" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Clothes            </a>
+                      <a href="/categorie.php?id=2" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Dumps            </a>
+                      <a href="/categorie.php?id=15" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Exclusif            </a>
+                      <a href="/categorie.php?id=4" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              HUD-UI            </a>
+                      <a href="/categorie.php?id=6" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Loading-Screens            </a>
+                      <a href="/categorie.php?id=14" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Mappings            </a>
+                      <a href="/categorie.php?id=5" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Menus            </a>
+                      <a href="/categorie.php?id=12" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Minimap            </a>
+                      <a href="/categorie.php?id=13" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Outils            </a>
+                      <a href="/categorie.php?id=11" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Pack graphique            </a>
+                      <a href="/categorie.php?id=3" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Scripts            </a>
+                      <a href="/categorie.php?id=7" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Template Discord            </a>
+                      <a href="/categorie.php?id=8" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Vehicules            </a>
+                      <a href="/categorie.php?id=16" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              VIP            </a>
+                      <a href="/categorie.php?id=10" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Weapons            </a>
+                  </div>
+      </div>
+      
+ <a href="https://discord.gg/2cvbcstknR" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full font-medium text-white bg-[#5865F2] hover:bg-[#404EED] transition duration-200 space-x-2 text-sm">
+  <span>Discord</span>
+  <i class="fab fa-discord text-base"></i>
+</a>
+    </nav>
+
+
+
+    <!-- Burger menu mobile -->
+    <button id="mobileMenuBtn" aria-label="Menu" aria-expanded="false" class="md:hidden text-white focus:outline-none">
+      <i class="fa fa-bars fa-lg"></i>
+    </button>
+  </div>
+
+  <!-- Nav mobile (hidden by default) -->
+  <nav id="mobileMenu" class="hidden md:hidden bg-[#1c1b1c] border-t-2 border-[#f40552]">
+    <a href="index.html" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">Accueil</a>
+
+        <a href="outils.html" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">Outils</a>
+
+        <a href="faq.html" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">FAQ</a>
+    <a href="https://discord.gg/2cvbcstknR" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition flex items-center space-x-2">
+       <i class="fab fa-discord"></i><span>Discord</span>
+    </a>
+
+    <!-- Mobile Catégories Dropdown -->
+    <div class="">
+      <button id="mobileCatBtn" class="w-full px-4 py-3 text-left text-white hover:bg-accent hover:text-white transition flex justify-between items-center focus:outline-none" type="button" aria-expanded="false" aria-controls="mobileCatMenu">
+        <span>Catégories</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div id="mobileCatMenu" class="hidden bg-[#262526]">
+                  <a href="/categorie.php?id=1" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Bases          </a>
+                  <a href="/categorie.php?id=9" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Clothes          </a>
+                  <a href="/categorie.php?id=2" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Dumps          </a>
+                  <a href="/categorie.php?id=15" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Exclusif          </a>
+                  <a href="/categorie.php?id=4" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            HUD-UI          </a>
+                  <a href="/categorie.php?id=6" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Loading-Screens          </a>
+                  <a href="/categorie.php?id=14" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Mappings          </a>
+                  <a href="/categorie.php?id=5" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Menus          </a>
+                  <a href="/categorie.php?id=12" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Minimap          </a>
+                  <a href="/categorie.php?id=13" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Outils          </a>
+                  <a href="/categorie.php?id=11" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Pack graphique          </a>
+                  <a href="/categorie.php?id=3" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Scripts          </a>
+                  <a href="/categorie.php?id=7" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Template Discord          </a>
+                  <a href="/categorie.php?id=8" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Vehicules          </a>
+                  <a href="/categorie.php?id=16" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            VIP          </a>
+                  <a href="/categorie.php?id=10" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Weapons          </a>
+              </div>
+    </div>
+
+  </nav>
+</header>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr',
+      includedLanguages: 'en,fr,es,de,it,pt,ar,tr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+  #custom_translate_widget {
+    display: flex;
+    align-items: center;
+    background: #262626;
+    border-radius: 40px;
+    padding: 6px 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.3);
+    width: fit-content;
+    gap: 10px;
+  }
+
+  .translate-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+  }
+
+  .translate-label {
+    white-space: nowrap;
+  }
+
+  #google_translate_element {
+    display: inline-block;
+  }
+
+  .goog-te-gadget {
+    height: auto !important;
+    font-size: 0 !important;
+  }
+
+  .goog-te-combo {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .goog-logo-link,
+  .goog-te-gadget span,
+  #google_translate_element a {
+    display: none !important;
+  }
+
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+  body {
+    top: 0 !important;
+  }
+</style>
+
+
+<script>
+  // Desktop catégories dropdown toggle
+  const desktopCatBtn = document.getElementById('desktopCatBtn');
+  const desktopCatMenu = document.getElementById('desktopCatMenu');
+
+  desktopCatBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isOpen = desktopCatMenu.classList.contains('opacity-100');
+    if (isOpen) {
+      desktopCatMenu.classList.remove('opacity-100', 'visible');
+      desktopCatMenu.classList.add('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      desktopCatMenu.classList.add('opacity-100', 'visible');
+      desktopCatMenu.classList.remove('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!desktopCatBtn.contains(e.target) && !desktopCatMenu.contains(e.target)) {
+      desktopCatMenu.classList.remove('opacity-100', 'visible');
+      desktopCatMenu.classList.add('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileCatBtn = document.getElementById('mobileCatBtn');
+  const mobileCatMenu = document.getElementById('mobileCatMenu');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu.classList.add('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  mobileCatBtn.addEventListener('click', () => {
+    const isOpen = !mobileCatMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileCatMenu.classList.add('hidden');
+      mobileCatBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileCatMenu.classList.remove('hidden');
+      mobileCatBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+</script>
+
+<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Texte d'origine</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Évaluez cette traduction</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Votre avis nous aidera à améliorer Google&nbsp;Traduction</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Bonne traduction" aria-label="Bonne traduction" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mauvaise traduction" aria-label="Mauvaise traduction" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div><main class="max-w-7xl mx-auto px-10 py-6 mb-10">
+
+
+    <!-- Import Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply Montserrat globally */
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .page-title {
+            color: #f40552;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .category-link {
+            color: #f40552;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .category-link:hover {
+            color: #ff6b35;
+            text-decoration: underline;
+        }
+        
+        .description-box {
+            background: linear-gradient(145deg, #181718, #1e1d1e);
+            border-radius: 12px;
+            box-shadow: 
+                inset 0 4px 8px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .media-container {
+            background: linear-gradient(145deg, #121212, #1e1d1e);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+        
+        .media-sidebar {
+            background: linear-gradient(145deg, #1c1b1c, #262526);
+            border-radius: 12px;
+        }
+        
+        .media-main {
+            background: linear-gradient(145deg, #262526, #2a2929);
+            border-radius: 12px;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #f40552, #ff6b35);
+            border-radius: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(244, 5, 82, 0.3);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 5, 82, 0.5);
+        }
+        
+        .scrollbar-custom {
+            scrollbar-width: thin;
+            scrollbar-color: #f40552 #1c1b1c;
+        }
+
+        .scrollbar-custom::-webkit-scrollbar {
+            width: 8px;
+        }
+        .scrollbar-custom::-webkit-scrollbar-track {
+            background: #1c1b1c;
+        }
+        .scrollbar-custom::-webkit-scrollbar-thumb {
+            background-color: #f40552;
+            border-radius: 4px;
+        }
+    </style>
+
+
+
+<h1 class="page-title text-4xl font-bold mb-4 mt-4">Base GTANew Rework</h1>
+<p class="text-gray-400 mb-4 font-medium">
+  Catégorie :
+  <a href="categorie.php?id=1" class="category-link">
+    Bases  </a>
+</p>
+
+<textarea readonly="" id="descriptionBox" class="description-box mb-8 text-gray-300 p-4 shadow-inner w-full resize-y overflow-auto whitespace-pre-wrap leading-normal scrollbar-custom text-sm min-h-[20px] max-h-[600px]" style="height: 74px;">Base GTANew Rework</textarea>
+
+<script>
+const textarea = document.getElementById("descriptionBox");
+textarea.style.height = "auto"; // reset
+textarea.style.height = Math.min(textarea.scrollHeight, 300) + "px";
+</script>
+
+
+  <div class="media-container flex gap-6 mb-8 p-4 shadow-lg max-w-6xl mx-auto">
+    <div id="media-sidebar" class="media-sidebar flex flex-col gap-4 overflow-y-auto max-h-[450px] w-24 p-2">
+                        <img src="https://files.greenheberg.fr/uploads/687a93982b1aa_image.webp" alt="Miniature 1" class="cursor-pointer rounded border-2 border-transparent hover:border-[#f40552] object-cover h-20 w-20 border-[#f40552]" data-index="0">
+                                <img src="https://files.greenheberg.fr/uploads/687a93a40ae3a_image.webp" alt="Miniature 2" class="cursor-pointer rounded border-2 border-transparent hover:border-[#f40552] object-cover h-20 w-20" data-index="1">
+                                <img src="https://files.greenheberg.fr/uploads/687a93b39ba66_image.webp" alt="Miniature 3" class="cursor-pointer rounded border-2 border-transparent hover:border-[#f40552] object-cover h-20 w-20" data-index="2">
+                                <img src="https://files.greenheberg.fr/uploads/687a93be16c6e_image.webp" alt="Miniature 4" class="cursor-pointer rounded border-2 border-transparent hover:border-[#f40552] object-cover h-20 w-20" data-index="3">
+                  </div>
+
+    <div id="media-main" class="media-main flex-1 flex justify-center items-center min-h-[400px] p-4"><img src="https://files.greenheberg.fr/uploads/687a93982b1aa_image.webp" alt="Media 1" class="max-w-full max-h-[500px] object-contain rounded-lg shadow-lg"></div>
+  </div>
+
+  <script>
+    const medias = [{"type":"image","url":"https:\/\/files.greenheberg.fr\/uploads\/687a93982b1aa_image.webp"},{"type":"image","url":"https:\/\/files.greenheberg.fr\/uploads\/687a93a40ae3a_image.webp"},{"type":"image","url":"https:\/\/files.greenheberg.fr\/uploads\/687a93b39ba66_image.webp"},{"type":"image","url":"https:\/\/files.greenheberg.fr\/uploads\/687a93be16c6e_image.webp"}];
+    const mediaMain = document.getElementById('media-main');
+    const sidebarImages = document.querySelectorAll('#media-sidebar img');
+
+    function renderMedia(index) {
+      const media = medias[index];
+      let html = '';
+      if (media.type === 'image') {
+        html = `<img src="${media.url}" alt="Media ${index + 1}" 
+                class="max-w-full max-h-[500px] object-contain rounded-lg shadow-lg" />`;
+      } else if (media.type === 'video') {
+        const ytId = media.url.match(/(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/watch\?v=|\/v\/))([\w\-]+)/);
+        if (ytId && ytId[1]) {
+          html = `<iframe class="rounded-lg shadow-lg" 
+                          src="https://www.youtube.com/embed/${ytId[1]}" 
+                          frameborder="0" allowfullscreen 
+                          loading="lazy" 
+                          style="width:100%; max-width:900px; height:506px; aspect-ratio:16/9;"></iframe>`;
+        } else {
+          html = '<p class="text-gray-400">Vidéo non valide.</p>';
+        }
+      }
+      mediaMain.innerHTML = html;
+
+      sidebarImages.forEach(img => img.classList.remove('border-[#f40552]'));
+      if (sidebarImages[index]) {
+        sidebarImages[index].classList.add('border-[#f40552]');
+      }
+    }
+
+    renderMedia(0);
+
+    sidebarImages.forEach(img => {
+      img.addEventListener('click', () => {
+        renderMedia(parseInt(img.getAttribute('data-index')));
+      });
+    });
+  </script>
+
+<h2 class="text-xl font-semibold mb-4 text-gray-300 font-bold">Télécharger la ressource :</h2>
+
+<div class="space-x-4 mb-10">
+      <a href="https://gofile.io/d/SxnGsn" target="_blank" rel="noopener noreferrer" class="download-btn inline-flex items-center text-white px-6 py-3 font-semibold transition space-x-2">
+       <i class="fa-solid fa-download"></i>
+       <span>gofile.io</span>
+    </a>
+  </div>
+
+
+</main><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="Widget de traduction" style="visibility: visible; box-sizing: content-box; width: 177px; height: 194px; display: none;"></iframe></body></html>
