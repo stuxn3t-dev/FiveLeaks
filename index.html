@@ -1,0 +1,2672 @@
+<html lang="fr" style="height: 100%;"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FiveLeaks™</title>
+  <meta name="description" content="Explorez les ressources FiveM gratuites et leaks sur FiveLeaks.">
+  <meta name="keywords" content="FiveLeaks, FiveM, Scripts FiveM, Ressources FiveM, Leaks FiveM, Mapping FiveM, Mods FiveM, Scripts ESX, QBCore, FiveM France, FiveCFX, Téléchargement FiveM, Gabz, okok, Molo, FStore, Hunterhax, Loaf, JG Scripts, Codesign, Nopixel, Mythic, London Studios, Rcore, T1ger, Mxn Scripts">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="FiveLeaks - Dev &amp; Leaks FiveM">
+  <meta property="og:description" content="Explorez les ressources FiveM gratuites et leaks sur FiveLeaks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="FiveLeaks">
+  <meta property="og:locale" content="fr_FR">
+    
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="" type="image/png">
+
+  
+
+
+  <style>
+            /* Apply Montserrat globally */
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    body {
+      background-color: #1c1b1c;
+      color: white;
+    }
+    .text-accent {
+      color: #f40552;
+    }
+    .bg-accent {
+      background-color: #f40552;
+    }
+    .hover\:bg-accent-dark:hover {
+      background-color: #c30444;
+    }
+  </style>
+<script>
+  const header = document.getElementById('mainHeader');
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > 20) {
+      header.classList.remove('bg-opacity-100');
+      header.classList.add('bg-opacity-70');
+    } else {
+      header.classList.add('bg-opacity-100');
+      header.classList.remove('bg-opacity-70');
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.invisible{visibility:hidden}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.left-0{left:0px}.top-0{top:0px}.right-3{right:0.75rem}.top-3{top:0.75rem}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mx-4{margin-left:1rem;margin-right:1rem}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mb-10{margin-bottom:2.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-3{margin-right:0.75rem}.mb-14{margin-bottom:3.5rem}.mb-16{margin-bottom:4rem}.mt-12{margin-top:3rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.h-8{height:2rem}.w-48{width:12rem}.w-auto{width:auto}.w-full{width:100%}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-3xl{max-width:48rem}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-2xl{border-radius:1rem}.border{border-width:1px}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#f40552\]{--tw-border-opacity:1;border-color:rgb(244 5 82 / var(--tw-border-opacity, 1))}.bg-\[\#1c1b1c\]{--tw-bg-opacity:1;background-color:rgb(28 27 28 / var(--tw-bg-opacity, 1))}.bg-\[\#262526\]{--tw-bg-opacity:1;background-color:rgb(38 37 38 / var(--tw-bg-opacity, 1))}.bg-\[\#5865F2\]{--tw-bg-opacity:1;background-color:rgb(88 101 242 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.bg-opacity-100{--tw-bg-opacity:1}.bg-opacity-60{--tw-bg-opacity:0.6}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-6xl{font-size:3.75rem;line-height:1}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-\[\#f40552\]{--tw-text-opacity:1;color:rgb(244 5 82 / var(--tw-text-opacity, 1))}.opacity-0{opacity:0}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:transform:hover{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-\[\#404EED\]:hover{--tw-bg-opacity:1;background-color:rgb(64 78 237 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.pgV-E-68K-A.L.W.O/am=hMA/d=0/rs=AN8SPfoMSCsz74287nno-gZmD_8fI6XKww/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.fr.MbEex8udwPM.O/am=AAAE/d=1/exm=el_conf/ed=1/rs=AN8SPfpuXaf7RpUsC6ZaBc_pJC7RYLmQVw/m=el_main"></script></head>
+
+
+<body class="font-sans" style="position: relative; min-height: 100%; top: 0px;">
+
+<header id="mainHeader" class="bg-[#1c1b1c] border-b-2 border-[#f40552] sticky top-0 z-50 transition-opacity duration-300 backdrop-blur bg-opacity-100">
+
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+<!-- Logo -->
+<a href="" class="flex items-center space-x-3">
+  <span class="text-2xl font-bold text-accent">FiveLeaks</span>
+</a>
+
+
+
+    <!-- Nav Desktop -->
+    <nav class="hidden md:flex items-center space-x-6 relative">
+
+      <!-- Accueil -->
+      <a href="index.html" class="text-white hover:text-accent transition font-semibold">Accueil</a>
+
+    <a href="outils.html" class="text-white hover:text-accent transition font-semibold">Outils</a>
+
+        <a href="faq.html" class="text-white hover:text-accent transition font-semibold">FAQ</a>
+
+                <a href="https://fivecfx.com/vip.php" class="text-white hover:text-accent transition font-semibold">VIP</a>
+
+      <!-- Dropdown Catégories -->
+      <div class="relative" id="desktopCatDropdownWrapper">
+        <button id="desktopCatBtn" class="text-white hover:text-accent font-semibold flex items-center space-x-1 focus:outline-none" aria-expanded="false" aria-controls="desktopCatMenu" type="button">
+          <span>Catégories</span>
+          <i class="fa fa-chevron-down text-xs mt-0.5"></i>
+        </button>
+        <div id="desktopCatMenu" class="absolute left-0 mt-2 w-48 bg-[#262526] rounded shadow-lg opacity-0 invisible transition-opacity z-50">
+                      <a href="/categorie.php?id=1" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Bases            </a>
+                      <a href="/categorie.php?id=9" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Clothes            </a>
+                      <a href="/categorie.php?id=2" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Dumps            </a>
+                      <a href="/categorie.php?id=15" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Exclusif            </a>
+                      <a href="/categorie.php?id=4" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              HUD-UI            </a>
+                      <a href="/categorie.php?id=6" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Loading-Screens            </a>
+                      <a href="/categorie.php?id=14" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Mappings            </a>
+                      <a href="/categorie.php?id=5" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Menus            </a>
+                      <a href="/categorie.php?id=12" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Minimap            </a>
+                      <a href="/categorie.php?id=13" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Outils            </a>
+                      <a href="/categorie.php?id=11" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Pack graphique            </a>
+                      <a href="/categorie.php?id=3" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Scripts            </a>
+                      <a href="/categorie.php?id=7" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Template Discord            </a>
+                      <a href="/categorie.php?id=8" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Vehicules            </a>
+                      <a href="/categorie.php?id=16" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              VIP            </a>
+                      <a href="/categorie.php?id=10" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Weapons            </a>
+                  </div>
+      </div>
+      
+ <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full font-medium text-white bg-[#5865F2] hover:bg-[#404EED] transition duration-200 space-x-2 text-sm">
+  <span>Discord</span>
+  <i class="fab fa-discord text-base"></i>
+</a>
+
+
+    </nav>
+
+
+
+    <!-- Burger menu mobile -->
+    <button id="mobileMenuBtn" aria-label="Menu" aria-expanded="false" class="md:hidden text-white focus:outline-none">
+      <i class="fa fa-bars fa-lg"></i>
+    </button>
+  </div>
+
+  <!-- Nav mobile (hidden by default) -->
+  <nav id="mobileMenu" class="hidden md:hidden bg-[#1c1b1c] border-t-2 border-[#f40552]">
+    <a href="/index.php" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">Accueil</a>
+
+        <a href="https://fivecfx.com/outils.php" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">Outils</a>
+
+        <a href="https://fivecfx.com/faq.php" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">FAQ</a>
+    <a href="https://discord.gg/yau2HpGz" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition flex items-center space-x-2">
+       <i class="fab fa-discord"></i><span>Discord</span>
+    </a>
+
+    <!-- Mobile Catégories Dropdown -->
+    <div class="">
+      <button id="mobileCatBtn" class="w-full px-4 py-3 text-left text-white hover:bg-accent hover:text-white transition flex justify-between items-center focus:outline-none" type="button" aria-expanded="false" aria-controls="mobileCatMenu">
+        <span>Catégories</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div id="mobileCatMenu" class="hidden bg-[#262526]">
+                  <a href="/categorie.php?id=1" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Bases          </a>
+                  <a href="/categorie.php?id=9" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Clothes          </a>
+                  <a href="/categorie.php?id=2" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Dumps          </a>
+                  <a href="/categorie.php?id=15" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Exclusif          </a>
+                  <a href="/categorie.php?id=4" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            HUD-UI          </a>
+                  <a href="/categorie.php?id=6" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Loading-Screens          </a>
+                  <a href="/categorie.php?id=14" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Mappings          </a>
+                  <a href="/categorie.php?id=5" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Menus          </a>
+                  <a href="/categorie.php?id=12" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Minimap          </a>
+                  <a href="/categorie.php?id=13" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Outils          </a>
+                  <a href="/categorie.php?id=11" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Pack graphique          </a>
+                  <a href="/categorie.php?id=3" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Scripts          </a>
+                  <a href="/categorie.php?id=7" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Template Discord          </a>
+                  <a href="/categorie.php?id=8" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Vehicules          </a>
+                  <a href="/categorie.php?id=16" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            VIP          </a>
+                  <a href="/categorie.php?id=10" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Weapons          </a>
+              </div>
+    </div>
+
+  </nav>
+</header>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr',
+      includedLanguages: 'en,fr,es,de,it,pt,ar,tr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+  #custom_translate_widget {
+    display: flex;
+    align-items: center;
+    background: #262626;
+    border-radius: 40px;
+    padding: 6px 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.3);
+    width: fit-content;
+    gap: 10px;
+  }
+
+  .translate-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+  }
+
+  .translate-label {
+    white-space: nowrap;
+  }
+
+  #google_translate_element {
+    display: inline-block;
+  }
+
+  .goog-te-gadget {
+    height: auto !important;
+    font-size: 0 !important;
+  }
+
+  .goog-te-combo {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .goog-logo-link,
+  .goog-te-gadget span,
+  #google_translate_element a {
+    display: none !important;
+  }
+
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+  body {
+    top: 0 !important;
+  }
+</style>
+
+
+<script>
+  // Desktop catégories dropdown toggle
+  const desktopCatBtn = document.getElementById('desktopCatBtn');
+  const desktopCatMenu = document.getElementById('desktopCatMenu');
+
+  desktopCatBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isOpen = desktopCatMenu.classList.contains('opacity-100');
+    if (isOpen) {
+      desktopCatMenu.classList.remove('opacity-100', 'visible');
+      desktopCatMenu.classList.add('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      desktopCatMenu.classList.add('opacity-100', 'visible');
+      desktopCatMenu.classList.remove('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!desktopCatBtn.contains(e.target) && !desktopCatMenu.contains(e.target)) {
+      desktopCatMenu.classList.remove('opacity-100', 'visible');
+      desktopCatMenu.classList.add('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileCatBtn = document.getElementById('mobileCatBtn');
+  const mobileCatMenu = document.getElementById('mobileCatMenu');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu.classList.add('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  mobileCatBtn.addEventListener('click', () => {
+    const isOpen = !mobileCatMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileCatMenu.classList.add('hidden');
+      mobileCatBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileCatMenu.classList.remove('hidden');
+      mobileCatBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+</script>
+
+<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Texte d'origine</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Évaluez cette traduction</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Votre avis nous aidera à améliorer Google&nbsp;Traduction</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Bonne traduction" aria-label="Bonne traduction" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mauvaise traduction" aria-label="Mauvaise traduction" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div><main class="max-w-7xl mx-auto px-10 py-6 mb-10">
+
+    <meta property="og:image" content="https://fivecfx.com/logo.png">
+    
+    <!-- Import Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        /* Variables CSS pour les couleurs du site */
+        :root {
+            --primary-color: #f40552;
+            --primary-dark: #d10444;
+            --secondary-color: #ff6b35;
+            --bg-primary: #1c1b1c;
+            --bg-secondary: #262526;
+            --bg-card: #2a2929;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b7c3;
+            --border-color: rgba(244, 5, 82, 0.2);
+        }
+
+        /* Apply Montserrat globally */
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Grid layout pour 4 cartes par ligne */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            padding: 1rem 0;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 1200px) {
+            .resources-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+        }
+
+        /* Cards optimisées - hauteur encore réduite */
+        .card {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(145deg, var(--bg-card), #1e1d1e);
+            border-radius: 14px;
+            box-shadow: 
+                0 6px 28px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            animation: cardSlideUp 0.6s ease-out;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                height: 180px;
+            }
+        }
+
+        @keyframes cardSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 
+                0 12px 35px rgba(0, 0, 0, 0.5),
+                0 0 15px rgba(244, 5, 82, 0.1),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(244, 5, 82, 0.05) 0%, 
+                rgba(255, 107, 53, 0.05) 50%, 
+                rgba(244, 5, 82, 0.02) 100%);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            border-radius: 14px;
+            z-index: 1;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-image-container {
+            position: relative;
+            overflow: hidden;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            height: 120px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            filter: brightness(0.9) contrast(1.05);
+        }
+
+        .card:hover img {
+            transform: scale(1.03);
+            filter: brightness(1.05) contrast(1.1);
+        }
+
+        .card-content {
+            padding: 0.7rem 1rem 0.9rem 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+            transition: color 0.2s ease;
+        }
+
+        .card:hover .card-title {
+            color: var(--primary-color);
+        }
+
+        /* VIP Cards - animations simplifiées et optimisées */
+        .vip-card {
+            border: 1px solid rgba(244, 5, 82, 0.3);
+            background-clip: padding-box;
+            position: relative;
+        }
+
+        .vip-card::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 15px;
+            z-index: -1;
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
+
+        .vip-card:hover::before {
+            opacity: 0.8;
+        }
+
+        /* Garde le texte blanc pour les cartes VIP */
+        .vip-card .card-title {
+            color: var(--text-primary) !important;
+        }
+
+        .vip-card:hover .card-title {
+            color: var(--text-primary) !important;
+            text-shadow: 0 0 6px rgba(244, 5, 82, 0.4);
+        }
+
+        .card-desc {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.25em;
+            max-height: calc(1.25em * 2);
+            font-size: 0.75rem;
+            flex-grow: 1;
+            transition: color 0.2s ease;
+            font-weight: 400;
+        }
+
+        .card:hover .card-desc {
+            color: #d1d5db;
+        }
+
+        /* Garde le texte blanc pour les cartes VIP */
+        .vip-card .card-desc {
+            color: var(--text-secondary) !important;
+        }
+
+        .vip-card:hover .card-desc {
+            color: #d1d5db !important;
+        }
+
+        /* Badge VIP simplifié - SANS animation de barre */
+        .vip-badge {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #ffffff !important;
+            padding: 0.15rem 0.35rem;
+            border-radius: 6px;
+            font-size: 0.55rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 
+                0 2px 6px rgba(244, 5, 82, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: vipGlow 4s ease-in-out infinite;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+        }
+
+        /* Animation VIP simplifiée - UNIQUEMENT le glow */
+        @keyframes vipGlow {
+            0%, 100% { 
+                box-shadow: 
+                    0 2px 6px rgba(244, 5, 82, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            }
+            50% { 
+                box-shadow: 
+                    0 3px 10px rgba(244, 5, 82, 0.6),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            }
+        }
+
+        .vip-badge-section {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Modern modal design */
+        #discordInvitePopup {
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            transition: all 0.4s ease;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #discordInvitePopup > div {
+            background: linear-gradient(145deg, var(--bg-card), var(--bg-primary));
+            border: 1px solid rgba(244, 5, 82, 0.3);
+            box-shadow: 
+                0 25px 60px rgba(0, 0, 0, 0.6),
+                0 0 30px rgba(244, 5, 82, 0.2);
+            animation: modalSlideIn 0.5s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8) translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Enhanced buttons */
+        .discord-btn {
+            background: linear-gradient(135deg, #5865F2, #4752C4);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .discord-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .discord-btn:hover::before {
+            left: 100%;
+        }
+
+        .discord-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(88, 101, 242, 0.4);
+        }
+
+        /* Enhanced search bar avec bouton qui suit l'input - CORRIGÉ */
+        .search-container {
+            position: relative;
+            max-width: 450px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .search-form {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            padding-right: 3.8rem;
+            border-radius: 25px;
+            background: linear-gradient(145deg, var(--bg-card), #1e1d1e);
+            border: 2px solid transparent;
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 6px 20px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(244, 5, 82, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        }
+
+        .search-form:hover .search-input {
+            transform: translateY(-2px);
+        }
+
+        .search-input:focus {
+            transform: translateY(-2px) !important;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 0 1.2rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 1rem;
+            box-shadow: 0 3px 12px rgba(244, 5, 82, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-form:hover .search-btn,
+        .search-input:focus + .search-btn {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 6px 15px rgba(244, 5, 82, 0.5);
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px) scale(1.05) !important;
+            box-shadow: 0 8px 20px rgba(244, 5, 82, 0.6) !important;
+        }
+
+        /* Enhanced section headers */
+        .section-title {
+            background: linear-gradient(135deg, var(--text-primary), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+            animation: borderSlide 1s ease-out;
+        }
+
+        @keyframes borderSlide {
+            from { width: 0; }
+            to { width: 60px; }
+        }
+
+        /* Enhanced welcome title */
+        .welcome-title {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 20px rgba(244, 5, 82, 0.3);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Enhanced notification */
+        .discord-notification {
+            background: linear-gradient(135deg, 
+                rgba(244, 5, 82, 0.1), 
+                rgba(255, 107, 53, 0.1));
+            border: 2px solid rgba(244, 5, 82, 0.3);
+            box-shadow: 0 8px 25px rgba(244, 5, 82, 0.2);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Enhanced hover effects for category links */
+        .category-link {
+            position: relative;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            margin-top: 0.3rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .category-link:hover {
+            color: var(--secondary-color);
+            transform: translateX(5px);
+        }
+
+        .category-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            transition: width 0.3s ease;
+        }
+
+        .category-link:hover::after {
+            width: 100%;
+        }
+
+        /* Smooth page transitions */
+        body {
+            animation: pageLoad 0.6s ease-out;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @keyframes pageLoad {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced VIP card border */
+        .vip-card {
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+
+        .vip-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 16px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2.5rem; /* ou ajuste à ta convenance */
+    }
+}
+
+    </style>
+  <title>FiveLeaks™</title>
+  <meta name="description" content="Explorez les ressources FiveM gratuites et leaks sur FiveCFX.">
+  <meta name="keywords" content="FiveLeaks, FiveM, Scripts FiveM, Ressources FiveM, Leaks FiveM, Mapping FiveM, Mods FiveM, Scripts ESX, QBCore, FiveM France, Téléchargement FiveM, Gabz, okok, Molo, FStore, Hunterhax, Loaf, JG Scripts, Codesign, Nopixel, Mythic, London Studios, Rcore, T1ger, Mxn Scripts">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="" type="image/png">
+
+  <link rel="canonical" href="">
+
+  <meta property="og:title" content="FiveLeaks - Dev &amp; Leaks FiveM">
+  <meta property="og:description" content="Explorez les ressources FiveM gratuites et leaks sur FiveLeaks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="FiveLeaks">
+  <meta property="og:locale" content="fr_FR">
+
+
+<!-- Enhanced Discord Popup Modal -->
+<div id="discordInvitePopup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+    <div class="bg-[#1c1b1c] rounded-2xl p-8 mx-4 max-w-md w-full border border-accent shadow-2xl">
+        <div class="text-center">
+            <i class="fab fa-discord text-5xl text-accent mb-6 animate-pulse"></i>
+            <h3 class="text-2xl font-bold text-white mb-4">Nouveau Discord FiveLeaks</h3>
+            <p class="text-gray-300 mb-8 leading-relaxed">
+                Rejoignez notre nouveau serveur Discord officiel !
+            </p>
+            <div class="flex flex-col space-y-4">
+                <a href="https://discord.gg" target="_blank" class="discord-btn text-white font-semibold py-4 px-8 rounded-2xl transition duration-300 flex items-center justify-center text-lg">
+                    <i class="fab fa-discord mr-3 text-xl"></i>Rejoindre le Discord
+                </a>
+                <button id="closeDiscordPopup" class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-2xl transition duration-300 hover:transform hover:-translate-y-1">
+                    Fermer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('discordInvitePopup');
+    const closeBtn = document.getElementById('closeDiscordPopup');
+    
+    // Check if popup was already closed
+    const popupClosed = localStorage.getItem('discordPopupClosed');
+    
+    // Show popup only if it wasn't closed before
+    if (!popupClosed) {
+        popup.classList.remove('hidden');
+    }
+    
+    // Close popup and save state
+    function closePopup() {
+        popup.classList.add('hidden');
+        localStorage.setItem('discordPopupClosed', 'true');
+    }
+    
+    // Close popup on button click
+    closeBtn.addEventListener('click', closePopup);
+    
+    // Close popup when clicking outside
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            closePopup();
+        }
+    });
+});
+</script>
+
+<div class="bg-red-900 border border-red-700 text-red-100 px-4 py-3 rounded-lg mb-8 mx-auto max-w-4xl">
+    <div class="flex items-start">
+        <div class="flex-shrink-0">
+            <svg class="h-5 w-5 text-red-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <div class="ml-3 mt-1 flex-1">
+            <h3 class="text-sm font-medium text-red-100">
+                Avertissement important
+            </h3>
+            <div class="mt-2 mb-3 text-sm text-red-200">
+                <p>
+                    Les mappings unlock disponibles dans la catégorie « Exclusif » présentent un risque élevé de bannissement de votre serveur par CFX. Nous vous recommandons vivement de retirer temporairement ces mappings du démarrage de vos serveurs afin d’éviter tout blocage. Nous vous tiendrons informés régulièrement de l’avancée du correctif ainsi que des mesures à adopter.
+                </p>
+            </div>
+            <a href="https://fivecfx.com/cfxban/?_gl=1*n1tmsr*_up*MQ..*_ga*MTU4NTcyMzEyMS4xNzU0NzIzNzIw*_ga_M60SXS5S3Y*czE3NTQ3MjM3MTkkbzEkZzAkdDE3NTQ3MjM3MTkkajYwJGwwJGgw" class="inline-block px-4 py-2 bg-primary hover:bg-primaryDark text-white text-sm font-medium rounded-xl border-[2px] border-[#ab4e4e] transition">
+                📄 Lire le communiqué
+            </a>
+        </div>
+    </div>
+</div>
+
+<h1 class="welcome-title text-6xl font-bold mb-4 mt-12 text-center">Bienvenue sur FiveLeaks !</h1>
+<p class="text-gray-300 mb-10 text-xl leading-relaxed max-w-3xl mx-auto text-center">Découvrez les meilleures ressources FiveM gratuites ou leaks sur ce site.</p>
+
+<!-- Enhanced search bar -->
+<div class="search-container mb-16">
+    <form action="search.php" method="get" class="search-form">
+        <input type="text" name="q" placeholder="Rechercher..." required="" class="search-input">
+        <button type="submit" class="search-btn">🔍</button>
+    </form>
+</div>
+
+                <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Bases                            </h2>
+
+            <div class="resources-grid">
+                    <a href="basedynasty.html" class="card " title="Base Dynasty 2025" style="animation-delay: 0s">
+               <div class="card-image-container">
+                  <img src="https://img.youtube.com/vi/Z9MBogHxLdQ/mqdefault.jpg" alt="Base Dynasty 2025" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+            </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base Dynasty 2025">Base Dynasty 2025</h3>
+                            <p class="card-desc" title="Base Dynasty 2025">Base Dynasty 2025</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=185" class="card " title="Base GTANew Rework" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/687a93982b1aa_image.webp" alt="Base GTANew Rework" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base GTANew Rework">Base GTANew Rework</h3>
+                            <p class="card-desc" title="Base GTANew Rework">Base GTANew Rework</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=176" class="card " title="Base Amnesty" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/VX5k_3vg2Z8/mqdefault.jpg" alt="Base Amnesty" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base Amnesty">Base Amnesty</h3>
+                            <p class="card-desc" title="Base Amnesty by BeldiDev">Base Amnesty by BeldiDev</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=156" class="card " title="Base &quot;Flashback&quot; de VTD" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/jv8yvZDt4vc/mqdefault.jpg" alt="Base &quot;Flashback&quot; de VTD" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base &quot;Flashback&quot; de VTD">Base "Flashback" de VTD</h3>
+                            <p class="card-desc" title="Base &quot;Flashback&quot; de VTD (vendue 20€ alors que c'est un template + scripts fb gratuits)">Base "Flashback" de VTD (vendue 20€ alors que c'est un template + scripts fb gratuits)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=114" class="card " title="Base WiseFA" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/5wu7amVZ7Zw/mqdefault.jpg" alt="Base WiseFA" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base WiseFA">Base WiseFA</h3>
+                            <p class="card-desc" title="Base WiseFA V1
+Version officielle, 100% fonctionnelle, pas ou peu de bugs
+Leak by rs3blvck ()">Base WiseFA V1
+Version officielle, 100% fonctionnelle, pas ou peu de bugs
+Leak by rs3blvck ()</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=109" class="card " title="Base Blueside" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/OIbNrMVeaHU/mqdefault.jpg" alt="Base Blueside" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base Blueside">Base Blueside</h3>
+                            <p class="card-desc" title="Base - BlueSide (style DynastyRP)">Base - BlueSide (style DynastyRP)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=106" class="card " title="Base style Sensity" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/cEL_lZ5zVkE/mqdefault.jpg" alt="Base style Sensity" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base style Sensity">Base style Sensity</h3>
+                            <p class="card-desc" title="NOUVELLE BASE FIVEM STYLE SENSITY • PLUG AND PLAY
+Leaked by @Hyrox">NOUVELLE BASE FIVEM STYLE SENSITY • PLUG AND PLAY
+Leaked by @Hyrox</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=105" class="card " title="Base style Dynasty" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/HgKu5bID4ig/mqdefault.jpg" alt="Base style Dynasty" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base style Dynasty">Base style Dynasty</h3>
+                            <p class="card-desc" title="BASE STYLE DYNASTY 2025 • PLUG &amp; PLAY
+Leaked by @Hyrox">BASE STYLE DYNASTY 2025 • PLUG &amp; PLAY
+Leaked by @Hyrox</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=103" class="card " title="Base META RP" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/1vNaQcVpU64/mqdefault.jpg" alt="Base META RP" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base META RP">Base META RP</h3>
+                            <p class="card-desc" title="BASE META RP • LEAK 0 BUG • PLUG AND PLAY • OPTI 2025">BASE META RP • LEAK 0 BUG • PLUG AND PLAY • OPTI 2025</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=102" class="card " title="Base Vision V3" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/yInwR5bF1fc/mqdefault.jpg" alt="Base Vision V3" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base Vision V3">Base Vision V3</h3>
+                            <p class="card-desc" title="BASE VISION V3 | LEAK | DEBUG | PLUG &amp; PLAY">BASE VISION V3 | LEAK | DEBUG | PLUG &amp; PLAY</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=100" class="card " title="Base Valestia" style="animation-delay: 0.5s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/tSnKuyzb0I4/mqdefault.jpg" alt="Base Valestia" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base Valestia">Base Valestia</h3>
+                            <p class="card-desc" title="Base Valestia, Leak, 0.60ms">Base Valestia, Leak, 0.60ms</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=64" class="card " title="Base FlashV" style="animation-delay: 0.55s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/GajT5S2tvc0/mqdefault.jpg" alt="Base FlashV" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base FlashV">Base FlashV</h3>
+                            <p class="card-desc" title="Base FlashV">Base FlashV</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=63" class="card " title="Base Antalya" style="animation-delay: 0.6s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/qfm3gf1sC0o/mqdefault.jpg" alt="Base Antalya" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base Antalya">Base Antalya</h3>
+                            <p class="card-desc" title="Base Antalya">Base Antalya</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=62" class="card " title="Base OrigenV2" style="animation-delay: 0.65s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/IrP97b8KfSU/mqdefault.jpg" alt="Base OrigenV2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base OrigenV2">Base OrigenV2</h3>
+                            <p class="card-desc" title="Base OrigenV2">Base OrigenV2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=61" class="card " title="Base Gunware V2" style="animation-delay: 0.7s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/NF0-kNkDuFA/mqdefault.jpg" alt="Base Gunware V2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base Gunware V2">Base Gunware V2</h3>
+                            <p class="card-desc" title="Base Gunware V2">Base Gunware V2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=60" class="card " title="Base FlashDev" style="animation-delay: 0.75s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/0K36PjUAyFo/mqdefault.jpg" alt="Base FlashDev" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Base FlashDev">Base FlashDev</h3>
+                            <p class="card-desc" title="Base FlashDev">Base FlashDev</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=1" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Clothes                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=200" class="card " title="Deado Clothing Pack" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/d-1V-m4a0OY/mqdefault.jpg" alt="Deado Clothing Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Deado Clothing Pack">Deado Clothing Pack</h3>
+                            <p class="card-desc" title="Deado Clothing Pack">Deado Clothing Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=172" class="card " title="WSPDoogie Male V3" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/Rtpec7lkMVg/mqdefault.jpg" alt="WSPDoogie Male V3" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="WSPDoogie Male V3">WSPDoogie Male V3</h3>
+                            <p class="card-desc" title="WSPDoogie Male V3 (EN 2 PARTIES - téléchargez les deux fichiers)">WSPDoogie Male V3 (EN 2 PARTIES - téléchargez les deux fichiers)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=171" class="card " title="DeadoClothingPackV2" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/rXaWymL991g/mqdefault.jpg" alt="DeadoClothingPackV2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DeadoClothingPackV2">DeadoClothingPackV2</h3>
+                            <p class="card-desc" title="DeadoClothingPackV2">DeadoClothingPackV2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=170" class="card " title="DeadoFemalePackV1" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/0MK074dACaQ/mqdefault.jpg" alt="DeadoFemalePackV1" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DeadoFemalePackV1">DeadoFemalePackV1</h3>
+                            <p class="card-desc" title="DeadoFemalePackV1">DeadoFemalePackV1</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=169" class="card " title="knockspackv4" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/PAOPPFW8hq8/mqdefault.jpg" alt="knockspackv4" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="knockspackv4">knockspackv4</h3>
+                            <p class="card-desc" title="knockspackv4">knockspackv4</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=43" class="card " title="Pack Tenues All GtaNEW (Le Vrai)" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://i.goopics.net/3yr1uk.png" alt="Pack Tenues All GtaNEW (Le Vrai)" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Pack Tenues All GtaNEW (Le Vrai)">Pack Tenues All GtaNEW (Le Vrai)</h3>
+                            <p class="card-desc" title="Pack Tenues All GtaNEW (Le Vrai)">Pack Tenues All GtaNEW (Le Vrai)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=42" class="card " title="EUP 9.10 (Fivem Ready)" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855dc3e18cc9_e6f2d11ee729c344061caa4bdea7635150327d4c.webp" alt="EUP 9.10 (Fivem Ready)" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="EUP 9.10 (Fivem Ready)">EUP 9.10 (Fivem Ready)</h3>
+                            <p class="card-desc" title="EUP 9.10 (Fivem Ready)">EUP 9.10 (Fivem Ready)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=41" class="card " title="Blaze - FBI/FBI Remastered" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855dc224c594_CFA82DBC-B14B-4A56-92B2-819676FE4411.webp.b8b895dfcf013648cd43c8aa6703330d.webp" alt="Blaze - FBI/FBI Remastered" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Blaze - FBI/FBI Remastered">Blaze - FBI/FBI Remastered</h3>
+                            <p class="card-desc" title="Blaze - FBI/FBI Remastered">Blaze - FBI/FBI Remastered</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=40" class="card " title="Squid Game EUP Pack" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/L4pnQo-Y26I/mqdefault.jpg" alt="Squid Game EUP Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Squid Game EUP Pack">Squid Game EUP Pack</h3>
+                            <p class="card-desc" title="Squid Game EUP Pack">Squid Game EUP Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=39" class="card " title="Pack EUP : SWAT / LAPD / LASD / FBI" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://i.goopics.net/3yr1uk.png" alt="Pack EUP : SWAT / LAPD / LASD / FBI" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Pack EUP : SWAT / LAPD / LASD / FBI">Pack EUP : SWAT / LAPD / LASD / FBI</h3>
+                            <p class="card-desc" title="Pack EUP : SWAT / LAPD / LASD / FBI">Pack EUP : SWAT / LAPD / LASD / FBI</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=38" class="card " title="Azura's Female Platinum Clothing Pack" style="animation-delay: 0.5s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/8Q5sL6QZig0/mqdefault.jpg" alt="Azura's Female Platinum Clothing Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Azura's Female Platinum Clothing Pack">Azura's Female Platinum Clothing Pack</h3>
+                            <p class="card-desc" title="Azura's Female Platinum Clothing Pack">Azura's Female Platinum Clothing Pack</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=9" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Dumps                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=69" class="card " title="DUMP - DynastyRP" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855e284e3d73_5ebc462cb810cc5c581a8f913f1dae718b21c997.webp" alt="DUMP - DynastyRP" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DUMP - DynastyRP">DUMP - DynastyRP</h3>
+                            <p class="card-desc" title="DUMP - DynastyRP">DUMP - DynastyRP</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=68" class="card " title="DUMP - MoonCVC" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855e26c2a951_logo-moon6.webp" alt="DUMP - MoonCVC" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DUMP - MoonCVC">DUMP - MoonCVC</h3>
+                            <p class="card-desc" title="DUMP - MoonCVC">DUMP - MoonCVC</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=67" class="card " title="DUMP - Serenity RP" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855e24fc587c_CDE66AC12A1CE9068EA351BB217D29ABFF1FE954.webp" alt="DUMP - Serenity RP" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DUMP - Serenity RP">DUMP - Serenity RP</h3>
+                            <p class="card-desc" title="DUMP - Serenity RP">DUMP - Serenity RP</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=66" class="card " title="DUMP - FlashFA" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855e22fc52e0_kv-ZJYy1_400x400.webp" alt="DUMP - FlashFA" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DUMP - FlashFA">DUMP - FlashFA</h3>
+                            <p class="card-desc" title="DUMP - FlashFA">DUMP - FlashFA</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=65" class="card " title="DUMP - NoFaceFA" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855e2134a892_Txa4eYJ7_400x400.webp" alt="DUMP - NoFaceFA" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DUMP - NoFaceFA">DUMP - NoFaceFA</h3>
+                            <p class="card-desc" title="DUMP - NoFaceFA">DUMP - NoFaceFA</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=2" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Exclusif                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=391" class="card " title="Kingmap LS Customs" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/Y3Ay2v7usJM/mqdefault.jpg" alt="Kingmap LS Customs" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Kingmap LS Customs">Kingmap LS Customs</h3>
+                            <p class="card-desc" title="Kingmap LS Customs">Kingmap LS Customs</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=390" class="card " title="Marimon Pearl Pier" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/70V81i7s6wc/mqdefault.jpg" alt="Marimon Pearl Pier" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Marimon Pearl Pier">Marimon Pearl Pier</h3>
+                            <p class="card-desc" title="Marimon Pearl Pier">Marimon Pearl Pier</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=389" class="card " title="Los Santos Custom Little Soul" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/aaBuDkCo6cY/mqdefault.jpg" alt="Los Santos Custom Little Soul" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Los Santos Custom Little Soul">Los Santos Custom Little Soul</h3>
+                            <p class="card-desc" title="Los Santos Custom Little Soul">Los Santos Custom Little Soul</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=388" class="card " title="Molo Mafia Pack" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/zHkL0e-az94/mqdefault.jpg" alt="Molo Mafia Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Molo Mafia Pack">Molo Mafia Pack</h3>
+                            <p class="card-desc" title="Molo Mafia Pack">Molo Mafia Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=387" class="card " title="NoPixel4 Maps Pack" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://i.ibb.co/q48ZWP2/maxresdefault-31.jpg" alt="NoPixel4 Maps Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="NoPixel4 Maps Pack">NoPixel4 Maps Pack</h3>
+                            <p class="card-desc" title="NoPixel4 Maps Pack
+• nopixel4_3dp_impound
+• nopixel4_3dp_mosley
+• nopixel4_3dp_pawnshop
+• nopixel4_3dp_prison
+• nopixel4_casino
+• nopixel4_clicklovers
+• nopixel4_downtown
+• nopixel4_laundromat
+• nopixel4_tuna_shop
+• nopixel4_cashexchange">NoPixel4 Maps Pack
+• nopixel4_3dp_impound
+• nopixel4_3dp_mosley
+• nopixel4_3dp_pawnshop
+...</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=386" class="card " title="Kpri PrestonHood" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/up5WVBH8DME/mqdefault.jpg" alt="Kpri PrestonHood" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Kpri PrestonHood">Kpri PrestonHood</h3>
+                            <p class="card-desc" title="Kpri PrestonHood, leaked by mitic7">Kpri PrestonHood, leaked by mitic7</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=385" class="card " title="Patoche editable studio + gift script" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/kZe_u7E4FaY/mqdefault.jpg" alt="Patoche editable studio + gift script" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Patoche editable studio + gift script">Patoche editable studio + gift script</h3>
+                            <p class="card-desc" title="Patoche editable studio + gift script">Patoche editable studio + gift script</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=384" class="card " title="SeaDome MLO - Sphere" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/ZWb0RTdM2EU/mqdefault.jpg" alt="SeaDome MLO - Sphere" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="SeaDome MLO - Sphere">SeaDome MLO - Sphere</h3>
+                            <p class="card-desc" title="SeaDome MLO - Sphere">SeaDome MLO - Sphere</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=383" class="card " title="Yasha Apocalypse" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6894f26215c16_56978c3f-1226-426c-b911-13f0af7dc74a.png" alt="Yasha Apocalypse" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Yasha Apocalypse">Yasha Apocalypse</h3>
+                            <p class="card-desc" title="Yasha Apocalypse Map -- REMOVED AT THE CREATOR REQUEST.">Yasha Apocalypse Map -- REMOVED AT THE CREATOR REQUEST.</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=382" class="card " title="Eclipse Medical Tower V2" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/ahvm5xidVgM/mqdefault.jpg" alt="Eclipse Medical Tower V2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Eclipse Medical Tower V2">Eclipse Medical Tower V2</h3>
+                            <p class="card-desc" title="Eclipse Medical Tower V2 | ShmannWorks">Eclipse Medical Tower V2 | ShmannWorks</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=381" class="card " title="NTeam Paleto Mechanic" style="animation-delay: 0.5s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/J8D2XjlRDic/mqdefault.jpg" alt="NTeam Paleto Mechanic" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="NTeam Paleto Mechanic">NTeam Paleto Mechanic</h3>
+                            <p class="card-desc" title="NTeam Paleto Mechanic">NTeam Paleto Mechanic</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=380" class="card " title="FM Shop Los Santos Medical Center" style="animation-delay: 0.55s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/iCTQFE6uDDE/mqdefault.jpg" alt="FM Shop Los Santos Medical Center" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="FM Shop Los Santos Medical Center">FM Shop Los Santos Medical Center</h3>
+                            <p class="card-desc" title="FM Shop Los Santos Medical Center">FM Shop Los Santos Medical Center</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=379" class="card " title="NTeam CC Mechanic" style="animation-delay: 0.6s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/wCCIMY8VrjQ/mqdefault.jpg" alt="NTeam CC Mechanic" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="NTeam CC Mechanic">NTeam CC Mechanic</h3>
+                            <p class="card-desc" title="NTeam CC Mechanic">NTeam CC Mechanic</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=378" class="card " title="Molo Casino" style="animation-delay: 0.65s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/O7BMB-1KHjg/mqdefault.jpg" alt="Molo Casino" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Molo Casino">Molo Casino</h3>
+                            <p class="card-desc" title="Molo Casino">Molo Casino</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=377" class="card " title="Vinewood Estate V3" style="animation-delay: 0.7s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/_CGTZ5j86Xw/mqdefault.jpg" alt="Vinewood Estate V3" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Vinewood Estate V3">Vinewood Estate V3</h3>
+                            <p class="card-desc" title="Vinewood Estate V3">Vinewood Estate V3</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=376" class="card " title="Gabz Ponsonbys" style="animation-delay: 0.75s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/689499b912161_image.webp" alt="Gabz Ponsonbys" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Gabz Ponsonbys">Gabz Ponsonbys</h3>
+                            <p class="card-desc" title="Gabz Ponsonbys">Gabz Ponsonbys</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=15" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    HUD-UI                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=212" class="card " title="FiveM ESX tHUD" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/h1BGZvzJEfE/mqdefault.jpg" alt="FiveM ESX tHUD" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="FiveM ESX tHUD">FiveM ESX tHUD</h3>
+                            <p class="card-desc" title="FiveM ESX tHUD">FiveM ESX tHUD</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=178" class="card " title="Connect UI" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6877a2389161c_Dark_Spooky_Stories_YouTube_Thumbnail_19.webp" alt="Connect UI" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Connect UI">Connect UI</h3>
+                            <p class="card-desc" title="Connect UI Yazho">Connect UI Yazho</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=161" class="card " title="WaveHUD" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68774617c625a_hd.webp" alt="WaveHUD" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="WaveHUD">WaveHUD</h3>
+                            <p class="card-desc" title="WaveHUD">WaveHUD</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=160" class="card " title="PauseMenu3D" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/687745f0dad8b_hd.webp" alt="PauseMenu3D" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="PauseMenu3D">PauseMenu3D</h3>
+                            <p class="card-desc" title="PauseMenu3D">PauseMenu3D</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=111" class="card " title="Pulse HUD V1" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/GVH74UGXYXM/mqdefault.jpg" alt="Pulse HUD V1" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Pulse HUD V1">Pulse HUD V1</h3>
+                            <p class="card-desc" title="HUD V1 | Compatible with ESX, QBCore, QBox">HUD V1 | Compatible with ESX, QBCore, QBox</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=93" class="card " title="Kazuya Notif V2" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6858364ed4762_Capturedcran2025-06-22185843.png" alt="Kazuya Notif V2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Kazuya Notif V2">Kazuya Notif V2</h3>
+                            <p class="card-desc" title="Kazuya Notif V2">Kazuya Notif V2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=78" class="card " title="OP-HUD" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68582e9a58ff8_maxresdefault.webp" alt="OP-HUD" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="OP-HUD">OP-HUD</h3>
+                            <p class="card-desc" title="OP-HUD ESX/QBCORE">OP-HUD ESX/QBCORE</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=77" class="card " title="OC HUD v2" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/z-A67Ob4zEI/mqdefault.jpg" alt="OC HUD v2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="OC HUD v2">OC HUD v2</h3>
+                            <p class="card-desc" title="OC HUD v2 – ESX">OC HUD v2 – ESX</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=76" class="card " title="customhudV1" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68582e280b5c1_NgGGrlI.webp" alt="customhudV1" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="customhudV1">customhudV1</h3>
+                            <p class="card-desc" title="customhudV1">customhudV1</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=72" class="card " title="Staff count bluelite" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68582ada2465f_Capture_decran_2025-05-30_005512.webp" alt="Staff count bluelite" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Staff count bluelite">Staff count bluelite</h3>
+                            <p class="card-desc" title="Staff count style BlueLite by FlashDEV">Staff count style BlueLite by FlashDEV</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=4" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Loading-Screens                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=168" class="card " title="deltav-loading" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68774703bc5d6_hd.webp" alt="deltav-loading" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="deltav-loading">deltav-loading</h3>
+                            <p class="card-desc" title="deltav-loading">deltav-loading</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=167" class="card " title="ks-load" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/687746eb6b56e_hd.webp" alt="ks-load" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="ks-load">ks-load</h3>
+                            <p class="card-desc" title="ks-load">ks-load</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=166" class="card " title="alvera_loading" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/687746b950fdb_hd.webp" alt="alvera_loading" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="alvera_loading">alvera_loading</h3>
+                            <p class="card-desc" title="alvera_loading">alvera_loading</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=165" class="card " title="cc_loadingscreen" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/687746a4abeb7_hd.webp" alt="cc_loadingscreen" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="cc_loadingscreen">cc_loadingscreen</h3>
+                            <p class="card-desc" title="cc_loadingscreen">cc_loadingscreen</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=164" class="card " title="GMRP_loadingscreen" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6877468895725_hd.webp" alt="GMRP_loadingscreen" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="GMRP_loadingscreen">GMRP_loadingscreen</h3>
+                            <p class="card-desc" title="GMRP_loadingscreen">GMRP_loadingscreen</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=163" class="card " title="MoonV Load" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68774667646b3_hd.webp" alt="MoonV Load" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="MoonV Load">MoonV Load</h3>
+                            <p class="card-desc" title="MoonV Load">MoonV Load</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=162" class="card " title="StageV Loading" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6877463b28724_hd.webp" alt="StageV Loading" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="StageV Loading">StageV Loading</h3>
+                            <p class="card-desc" title="StageV Loading">StageV Loading</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=117" class="card " title="LoadingScreen - GtaNew" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6870ff9ebdc70_Capture_decran_2025-06-30_123814.webp" alt="LoadingScreen - GtaNew" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="LoadingScreen - GtaNew">LoadingScreen - GtaNew</h3>
+                            <p class="card-desc" title="LoadingScreen - GtaNew">LoadingScreen - GtaNew</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=87" class="card " title="fl-LoadingScreen" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6858308eee3b4_image.webp" alt="fl-LoadingScreen" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="fl-LoadingScreen">fl-LoadingScreen</h3>
+                            <p class="card-desc" title="fl-LoadingScreen">fl-LoadingScreen</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=86" class="card " title="88s loading screen" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/VHunjFiZo1Q/mqdefault.jpg" alt="88s loading screen" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="88s loading screen">88s loading screen</h3>
+                            <p class="card-desc" title="88s loading screen">88s loading screen</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=85" class="card " title="Lucid Store Loading Screen" style="animation-delay: 0.5s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/e0VRBzr7r28/mqdefault.jpg" alt="Lucid Store Loading Screen" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Lucid Store Loading Screen">Lucid Store Loading Screen</h3>
+                            <p class="card-desc" title="Fivem Loading Screen Script | Jakrino Load Screen">Fivem Loading Screen Script | Jakrino Load Screen</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=84" class="card " title="Y.D.C Loading Screen" style="animation-delay: 0.55s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/_poKgCdpqX0/mqdefault.jpg" alt="Y.D.C Loading Screen" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Y.D.C Loading Screen">Y.D.C Loading Screen</h3>
+                            <p class="card-desc" title="Y.D.C Loading Screen">Y.D.C Loading Screen</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=83" class="card " title="CORLEONE ROLEPLAY LOADING SCREEN" style="animation-delay: 0.6s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68582fd13d75f_1.webp" alt="CORLEONE ROLEPLAY LOADING SCREEN" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="CORLEONE ROLEPLAY LOADING SCREEN">CORLEONE ROLEPLAY LOADING SCREEN</h3>
+                            <p class="card-desc" title="CORLEONE ROLEPLAY LOADING SCREEN">CORLEONE ROLEPLAY LOADING SCREEN</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=6" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Mappings                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=197" class="card " title="Meadow Hills Street" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/Djcs4vEiajU/mqdefault.jpg" alt="Meadow Hills Street" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Meadow Hills Street">Meadow Hills Street</h3>
+                            <p class="card-desc" title="Meadow Hills Street">Meadow Hills Street</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=196" class="card " title="MLO Interior Stock labs" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/HiaghYeTx90/mqdefault.jpg" alt="MLO Interior Stock labs" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="MLO Interior Stock labs">MLO Interior Stock labs</h3>
+                            <p class="card-desc" title="MLO Interior Stock labs">MLO Interior Stock labs</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=195" class="card " title="Ocean Medical Center" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/ZA5DrqXkHNA/mqdefault.jpg" alt="Ocean Medical Center" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Ocean Medical Center">Ocean Medical Center</h3>
+                            <p class="card-desc" title="OceanMedicalCenter">OceanMedicalCenter</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=194" class="card " title="Skate Park" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/l5slH-xE5OI/mqdefault.jpg" alt="Skate Park" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Skate Park">Skate Park</h3>
+                            <p class="card-desc" title="Skate Park">Skate Park</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=193" class="card " title="DP Nexus" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/-XNK-e-bI-4/mqdefault.jpg" alt="DP Nexus" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DP Nexus">DP Nexus</h3>
+                            <p class="card-desc" title="DP Nexus">DP Nexus</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=192" class="card " title="Mechanic STO Motors" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/PSOJro4wgTw/mqdefault.jpg" alt="Mechanic STO Motors" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Mechanic STO Motors">Mechanic STO Motors</h3>
+                            <p class="card-desc" title="Mechanic STO Motors">Mechanic STO Motors</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=191" class="card " title="Underground Garage" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/mHIWz43KOtU/mqdefault.jpg" alt="Underground Garage" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Underground Garage">Underground Garage</h3>
+                            <p class="card-desc" title="Underground Garage">Underground Garage</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=190" class="card " title="Deer Diner" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/hu2oncM3s-g/mqdefault.jpg" alt="Deer Diner" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Deer Diner">Deer Diner</h3>
+                            <p class="card-desc" title="Deer Diner">Deer Diner</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=189" class="card " title="Domino's" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/nWRkkYsMWA4/mqdefault.jpg" alt="Domino's" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Domino's">Domino's</h3>
+                            <p class="card-desc" title="Domino's">Domino's</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=184" class="card " title="Beach party" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/OqRM9ysQ-PI/mqdefault.jpg" alt="Beach party" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Beach party">Beach party</h3>
+                            <p class="card-desc" title="Beach party">Beach party</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=175" class="card " title="3dMarket Legion Square" style="animation-delay: 0.5s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/BrK_0L9l1_8/mqdefault.jpg" alt="3dMarket Legion Square" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="3dMarket Legion Square">3dMarket Legion Square</h3>
+                            <p class="card-desc" title="3dMarket Legion Square">3dMarket Legion Square</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=174" class="card " title="Paleto Garage" style="animation-delay: 0.55s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/JuxA05IiQxc/mqdefault.jpg" alt="Paleto Garage" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Paleto Garage">Paleto Garage</h3>
+                            <p class="card-desc" title="Paleto Garage">Paleto Garage</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=173" class="card " title="AutoExotic" style="animation-delay: 0.6s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/AcWbgWCaUGg/mqdefault.jpg" alt="AutoExotic" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="AutoExotic">AutoExotic</h3>
+                            <p class="card-desc" title="AutoExotic">AutoExotic</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=155" class="card " title="Gabz Bahamas" style="animation-delay: 0.65s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/gECTzCVK3Ok/mqdefault.jpg" alt="Gabz Bahamas" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Gabz Bahamas">Gabz Bahamas</h3>
+                            <p class="card-desc" title="Gabz Bahamas">Gabz Bahamas</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=154" class="card " title="Gabz Benny's" style="animation-delay: 0.7s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/K8k9RxjOo3o/mqdefault.jpg" alt="Gabz Benny's" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Gabz Benny's">Gabz Benny's</h3>
+                            <p class="card-desc" title="Gabz Benny's Unlock">Gabz Benny's Unlock</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=152" class="card " title="Mine - Shafts" style="animation-delay: 0.75s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68757f33df90f_2d56bf5fafb5a2abf4883861ec2467821c4bde88.jpg.5d830391800a4a834c9362369c2455e7.jpg" alt="Mine - Shafts" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Mine - Shafts">Mine - Shafts</h3>
+                            <p class="card-desc" title="Mine - Shafts">Mine - Shafts</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=14" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Menus                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=116" class="card " title="RageUI - Base GtaNew / Dynasty" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6870ff5ae7d52_image.webp" alt="RageUI - Base GtaNew / Dynasty" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="RageUI - Base GtaNew / Dynasty">RageUI - Base GtaNew / Dynasty</h3>
+                            <p class="card-desc" title="RageUI - Base GtaNew / Dynasty">RageUI - Base GtaNew / Dynasty</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=92" class="card " title="RageUI FlashBack" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6858360409c96_image_2.webp" alt="RageUI FlashBack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="RageUI FlashBack">RageUI FlashBack</h3>
+                            <p class="card-desc" title="RageUI FlashBack">RageUI FlashBack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=91" class="card " title="RageUI - Neva" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/685835823c1af_image.webp" alt="RageUI - Neva" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="RageUI - Neva">RageUI - Neva</h3>
+                            <p class="card-desc" title="RageUI basic rework base Neva">RageUI basic rework base Neva</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=90" class="card " title="RageUI - Pmenu" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6858355a7abaa_Capture_decran_2025-03-09_203231.webp" alt="RageUI - Pmenu" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="RageUI - Pmenu">RageUI - Pmenu</h3>
+                            <p class="card-desc" title="RageUI style Pmenu">RageUI style Pmenu</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=89" class="card " title="RageUI - Flashland" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68583547113ca_image.webp" alt="RageUI - Flashland" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="RageUI - Flashland">RageUI - Flashland</h3>
+                            <p class="card-desc" title="RageUI - Flashland">RageUI - Flashland</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=88" class="card " title="RageUI FlashFA" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6858314761f2d_image.webp" alt="RageUI FlashFA" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="RageUI FlashFA">RageUI FlashFA</h3>
+                            <p class="card-desc" title="RageUI FlashFA
+--------------------------------------------
+RageUI type Flashfa
+
+Changer le Titre des menu
+Rechercher dans VSCODE
+Menu.Title = &quot;MENU&quot;
+
+Changer la couleur des boutons
+Rechercher dans VSCODE (remplacer dans all fichier du dossier RageUI)
+177, 6, 6
+
+Changer la couleur de la bannière
+Changer avec OpenIV le commonmenu.ytd
+
+Dernier Patch Note
+Fix Slider, List, RightBadge, LeftBadge / BY KAZUYA : JE VOUS AI DEBUG LES PLACEMENTS BADGES
+
+Vous devez laisser l'ordre des fichiers et bien placer les 2 dossiers a la racine de votre script
+Ajouter ceci dans votre fxmanifest.lua coter client
+    &quot;RageUI/RMenu.lua&quot;,
+    &quot;RageUI/menu/RageUI.lua&quot;,
+    &quot;RageUI/menu/Menu.lua&quot;,
+    &quot;RageUI/menu/MenuController.lua&quot;,
+    &quot;RageUI/components/*.lua&quot;,
+    &quot;RageUI/menu/elements/*.lua&quot;,
+    &quot;RageUI/menu/items/*.lua&quot;,
+    &quot;RageUI/menu/panels/*.lua&quot;,
+    &quot;RageUI/menu/panels/*.lua&quot;,
+    &quot;RageUI/menu/windows/*.lua&quot;,">RageUI FlashFA
+--------------------------------------------
+RageUI type Flashfa
+
+Changer le T...</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=82" class="card " title="RageUI FShop" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68582f700eaf9_image.webp" alt="RageUI FShop" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="RageUI FShop">RageUI FShop</h3>
+                            <p class="card-desc" title="RageUI style FShop">RageUI style FShop</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=33" class="card " title="Menu Flashback NUI" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855bbb66f0ed_Cx76Vj7h.webp" alt="Menu Flashback NUI" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Menu Flashback NUI">Menu Flashback NUI</h3>
+                            <p class="card-desc" title="Menu style Flashback en NUI">Menu style Flashback en NUI</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=5" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Minimap                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=97" class="card " title="Map Satelitte + Postal" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6858393d08140_afCqygo.webp" alt="Map Satelitte + Postal" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Map Satelitte + Postal">Map Satelitte + Postal</h3>
+                            <p class="card-desc" title="Map Satelitte + Postal">Map Satelitte + Postal</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=96" class="card " title="PostalMap" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6858390776784_WFIRuKJ.webp" alt="PostalMap" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="PostalMap">PostalMap</h3>
+                            <p class="card-desc" title="PostalMap">PostalMap</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=95" class="card " title="Minimap Chicago" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68583838d7430_image.webp" alt="Minimap Chicago" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Minimap Chicago">Minimap Chicago</h3>
+                            <p class="card-desc" title="Minimap Chicago">Minimap Chicago</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=12" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Outils                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=112" class="card " title="Anti Straf" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://i.goopics.net/3yr1uk.png" alt="Anti Straf" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Anti Straf">Anti Straf</h3>
+                            <p class="card-desc" title="Anti Straf (client.lua)">Anti Straf (client.lua)</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=13" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Pack graphique                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=71" class="card " title="AbdelTTV - Tobias V2" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/mqKLiZ45toQ/mqdefault.jpg" alt="AbdelTTV - Tobias V2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="AbdelTTV - Tobias V2">AbdelTTV - Tobias V2</h3>
+                            <p class="card-desc" title="AbdelTTV - Tobias V2">AbdelTTV - Tobias V2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=70" class="card " title="AbdelTTV - FANA V2" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/y65pCUYR-is/mqdefault.jpg" alt="AbdelTTV - FANA V2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="AbdelTTV - FANA V2">AbdelTTV - FANA V2</h3>
+                            <p class="card-desc" title="AbdelTTV - FANA V2">AbdelTTV - FANA V2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=34" class="card " title="Soloty V8" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855d87405d3b_sddefault.jpg" alt="Soloty V8" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Soloty V8">Soloty V8</h3>
+                            <p class="card-desc" title="Soloty V8">Soloty V8</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=11" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Scripts                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=365" class="card " title="[FiveCFX] Blips Builder" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/c1Cw3ntycXU/mqdefault.jpg" alt="[FiveCFX] Blips Builder" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="[FiveCFX] Blips Builder">[FiveCFX] Blips Builder</h3>
+                            <p class="card-desc" title="[FiveCFX] Blips Builder">[FiveCFX] Blips Builder</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=364" class="card " title="0r Marriage" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/frP7em0zv5A/mqdefault.jpg" alt="0r Marriage" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="0r Marriage">0r Marriage</h3>
+                            <p class="card-desc" title="0r Marriage">0r Marriage</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=257" class="card " title="Ox_inventory reskin" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688c937943a1c_357e6f5b8f352e795d94e7629c43df92aa27758f_2_690x373.webp" alt="Ox_inventory reskin" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Ox_inventory reskin">Ox_inventory reskin</h3>
+                            <p class="card-desc" title="Ox_inventory reskin">Ox_inventory reskin</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=256" class="card " title="spawn-selector" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/-XyQkLz0BFs/mqdefault.jpg" alt="spawn-selector" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="spawn-selector">spawn-selector</h3>
+                            <p class="card-desc" title="spawn-selector">spawn-selector</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=214" class="card " title="Ignis Scripts - Vehicle Control System" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688605e73f9fd_2d85b380cc2370948bc08c388ea2bd2e47488448.webp" alt="Ignis Scripts - Vehicle Control System" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Ignis Scripts - Vehicle Control System">Ignis Scripts - Vehicle Control System</h3>
+                            <p class="card-desc" title="Ignis Scripts - Vehicle Control System">Ignis Scripts - Vehicle Control System</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=211" class="card " title="CodeM mGarage" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/tOVJyCkSlM8/mqdefault.jpg" alt="CodeM mGarage" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="CodeM mGarage">CodeM mGarage</h3>
+                            <p class="card-desc" title="CodeM mGarage">CodeM mGarage</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=210" class="card " title="Radio RageUI" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/kUatSD7XKvU/mqdefault.jpg" alt="Radio RageUI" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Radio RageUI">Radio RageUI</h3>
+                            <p class="card-desc" title="Radio RageUI">Radio RageUI</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=209" class="card " title="FPS BOOST - CROSSHAIR MENU" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/q1oJERR6KU4/mqdefault.jpg" alt="FPS BOOST - CROSSHAIR MENU" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="FPS BOOST - CROSSHAIR MENU">FPS BOOST - CROSSHAIR MENU</h3>
+                            <p class="card-desc" title="FPS BOOST - CROSSHAIR MENU">FPS BOOST - CROSSHAIR MENU</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=208" class="card " title="zF5 RageUI V2" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/XPjAicHRJPM/mqdefault.jpg" alt="zF5 RageUI V2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="zF5 RageUI V2">zF5 RageUI V2</h3>
+                            <p class="card-desc" title="zF5 RageUI V2">zF5 RageUI V2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=207" class="card " title="Clothing Menu | 5Point" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/oAW0de2bCqk/mqdefault.jpg" alt="Clothing Menu | 5Point" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Clothing Menu | 5Point">Clothing Menu | 5Point</h3>
+                            <p class="card-desc" title="Clothing Menu | 5Point">Clothing Menu | 5Point</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=204" class="card " title="cxGarage" style="animation-delay: 0.5s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/ZF-kLbyAWjY/mqdefault.jpg" alt="cxGarage" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="cxGarage">cxGarage</h3>
+                            <p class="card-desc" title="cxGarage">cxGarage</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=203" class="card " title="tnj-development Inventory" style="animation-delay: 0.55s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/687d592a23b69_inventaire_2.webp" alt="tnj-development Inventory" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="tnj-development Inventory">tnj-development Inventory</h3>
+                            <p class="card-desc" title="tnj-development Inventory">tnj-development Inventory</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=202" class="card " title="Nopixel-4.0-inventory" style="animation-delay: 0.6s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/687d59120d834_inventaire_3.webp" alt="Nopixel-4.0-inventory" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Nopixel-4.0-inventory">Nopixel-4.0-inventory</h3>
+                            <p class="card-desc" title="Nopixel-4.0-inventory">Nopixel-4.0-inventory</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=201" class="card " title="CodeM mMarket v2" style="animation-delay: 0.65s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/hvKkioEgZL8/mqdefault.jpg" alt="CodeM mMarket v2" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="CodeM mMarket v2">CodeM mMarket v2</h3>
+                            <p class="card-desc" title="CodeM mMarket v2">CodeM mMarket v2</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=199" class="card " title="Script blanchiment" style="animation-delay: 0.7s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/qCN53FDKrs8/mqdefault.jpg" alt="Script blanchiment" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Script blanchiment">Script blanchiment</h3>
+                            <p class="card-desc" title="Script blanchiment">Script blanchiment</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=198" class="card " title="cxDrugs" style="animation-delay: 0.75s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/DIDJkEnCf0w/mqdefault.jpg" alt="cxDrugs" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="cxDrugs">cxDrugs</h3>
+                            <p class="card-desc" title="cxDrugs">cxDrugs</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=3" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Template Discord                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=348" class="card " title="AmnestyRP" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688e20027af94_image.webp" alt="AmnestyRP" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="AmnestyRP">AmnestyRP</h3>
+                            <p class="card-desc" title="AmnestyRP Template Discord">AmnestyRP Template Discord</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=36" class="card " title="Template Discord - Sensity" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855da9180406_b0b1b57d0bbd0202b892cb34f2d49ef0.webp" alt="Template Discord - Sensity" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Template Discord - Sensity">Template Discord - Sensity</h3>
+                            <p class="card-desc" title="Template Discord - Sensity">Template Discord - Sensity</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=7" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Vehicules                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=206" class="card " title="Pack véhicule de service FR" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/fRISqW02yr4/mqdefault.jpg" alt="Pack véhicule de service FR" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Pack véhicule de service FR">Pack véhicule de service FR</h3>
+                            <p class="card-desc" title="Pack véhicule de service FR">Pack véhicule de service FR</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=205" class="card " title="1370 - FiveM 1370 Motorcycles Choppers Pack" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/OoQ6KAnPu-0/mqdefault.jpg" alt="1370 - FiveM 1370 Motorcycles Choppers Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="1370 - FiveM 1370 Motorcycles Choppers Pack">1370 - FiveM 1370 Motorcycles Choppers Pack</h3>
+                            <p class="card-desc" title="1370 - FiveM 1370 Motorcycles Choppers Pack">1370 - FiveM 1370 Motorcycles Choppers Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=140" class="card " title="ANIMATED CARPACK 72cars" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6872c22ca39fd_image.webp" alt="ANIMATED CARPACK 72cars" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="ANIMATED CARPACK 72cars">ANIMATED CARPACK 72cars</h3>
+                            <p class="card-desc" title="ANIMATED CARPACK 72cars">ANIMATED CARPACK 72cars</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=113" class="card " title="600 Debadged Cars" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68702cb83cb3b_image.png.f9b6e4b6fcab23a9cda870e8e4da56c2.webp" alt="600 Debadged Cars" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="600 Debadged Cars">600 Debadged Cars</h3>
+                            <p class="card-desc" title="Pack 600 Debadged Cars">Pack 600 Debadged Cars</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=75" class="card " title="Pack voiture Ewen" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/68582d82eb26e_image.webp" alt="Pack voiture Ewen" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Pack voiture Ewen">Pack voiture Ewen</h3>
+                            <p class="card-desc" title="Pack voiture Ewen (leak by FlashDev)">Pack voiture Ewen (leak by FlashDev)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=46" class="card " title="DigitalLativa - 450 Cars (Debadged)" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855dcddec269_debadged-vehicle-pack-450-cars-645028.webp.481ab479c1a385043b846c0d783ee39f1.webp" alt="DigitalLativa - 450 Cars (Debadged)" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DigitalLativa - 450 Cars (Debadged)">DigitalLativa - 450 Cars (Debadged)</h3>
+                            <p class="card-desc" title="DigitalLativa - 450 Cars (Debadged)">DigitalLativa - 450 Cars (Debadged)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=45" class="card " title="DigitalLativa - Vehicle Pack Debadge (300 vehicles)" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855dc7cc4f24_debadged-car-pack-300-cars-101686.webp" alt="DigitalLativa - Vehicle Pack Debadge (300 vehicles)" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="DigitalLativa - Vehicle Pack Debadge (300 vehicles)">DigitalLativa - Vehicle Pack Debadge (300 vehicles)</h3>
+                            <p class="card-desc" title="DigitalLativa - Vehicle Pack Debadge (300 vehicles)">DigitalLativa - Vehicle Pack Debadge (300 vehicles)</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=44" class="card " title="Pack Vehicles (NO DEBADGED)" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/6855dc62cbb97_image.png" alt="Pack Vehicles (NO DEBADGED)" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Pack Vehicles (NO DEBADGED)">Pack Vehicles (NO DEBADGED)</h3>
+                            <p class="card-desc" title="Pack Vehicles (NO DEBADGED)">Pack Vehicles (NO DEBADGED)</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=8" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    <div class="vip-badge-section">
+                        VIP                    </div>
+                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=354" class="card vip-card" title="0Resmon Drug Laboratory" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/hyNWzBvwf74/mqdefault.jpg" alt="0Resmon Drug Laboratory" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="0Resmon Drug Laboratory">0Resmon Drug Laboratory</h3>
+                            <p class="card-desc" title="0Resmon Drug Laboratory">0Resmon Drug Laboratory</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=351" class="card vip-card" title="SNZ_UI" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688ea93e3da5c_bcb70acd606c4574716bb44668646599b64a70bf_2_690x388.png" alt="SNZ_UI" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="SNZ_UI">SNZ_UI</h3>
+                            <p class="card-desc" title="SNZ_UI">SNZ_UI</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=350" class="card vip-card" title="Fivem Realistic Car Explosion" style="animation-delay: 0.1s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/Wnh4XKjCp3s/mqdefault.jpg" alt="Fivem Realistic Car Explosion" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Fivem Realistic Car Explosion">Fivem Realistic Car Explosion</h3>
+                            <p class="card-desc" title="Fivem Realistic Car Explosion">Fivem Realistic Car Explosion</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=349" class="card vip-card" title="Dr*gs Animations Pack" style="animation-delay: 0.15s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/91Nfq1wh19w/mqdefault.jpg" alt="Dr*gs Animations Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Dr*gs Animations Pack">Dr*gs Animations Pack</h3>
+                            <p class="card-desc" title="Dr*gs Animations Pack">Dr*gs Animations Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=347" class="card vip-card" title="0R-Reshouse" style="animation-delay: 0.2s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/YQ2EqRrCTsM/mqdefault.jpg" alt="0R-Reshouse" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="0R-Reshouse">0R-Reshouse</h3>
+                            <p class="card-desc" title="0R-Reshouse">0R-Reshouse</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=346" class="card vip-card" title="stg_wallet" style="animation-delay: 0.25s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688d4336c2e95_666981d1e52c0f3d9d6fc7c365533b3842d8490d.webp" alt="stg_wallet" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="stg_wallet">stg_wallet</h3>
+                            <p class="card-desc" title="stg_wallet">stg_wallet</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=345" class="card vip-card" title="sh-lockpick" style="animation-delay: 0.3s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/ACrMkIOOwiQ/mqdefault.jpg" alt="sh-lockpick" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="sh-lockpick">sh-lockpick</h3>
+                            <p class="card-desc" title="sh-lockpick">sh-lockpick</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=344" class="card vip-card" title="Dracula V5.1" style="animation-delay: 0.35s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/B0XGZA3PqtU/mqdefault.jpg" alt="Dracula V5.1" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Dracula V5.1">Dracula V5.1</h3>
+                            <p class="card-desc" title="Dracula V5.1">Dracula V5.1</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=343" class="card vip-card" title="NCHub Special Edition V3.0" style="animation-delay: 0.4s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/1rTT-rHYR8U/mqdefault.jpg" alt="NCHub Special Edition V3.0" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="NCHub Special Edition V3.0">NCHub Special Edition V3.0</h3>
+                            <p class="card-desc" title="NCHub Special Edition V3.0">NCHub Special Edition V3.0</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=342" class="card vip-card" title="Blaine County Sheriffs Office Pack" style="animation-delay: 0.45s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/kJctLfkOZ1k/mqdefault.jpg" alt="Blaine County Sheriffs Office Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Blaine County Sheriffs Office Pack">Blaine County Sheriffs Office Pack</h3>
+                            <p class="card-desc" title="Blaine County Sheriffs Office Pack">Blaine County Sheriffs Office Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=341" class="card vip-card" title="Jacobs CHP Styled Pack" style="animation-delay: 0.5s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/Bn0JfXwCr0E/mqdefault.jpg" alt="Jacobs CHP Styled Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Jacobs CHP Styled Pack">Jacobs CHP Styled Pack</h3>
+                            <p class="card-desc" title="Jacobs CHP Styled Pack">Jacobs CHP Styled Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=340" class="card vip-card" title="TOY CAR COLLECTION" style="animation-delay: 0.55s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/-I2wWO49sbM/mqdefault.jpg" alt="TOY CAR COLLECTION" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="TOY CAR COLLECTION">TOY CAR COLLECTION</h3>
+                            <p class="card-desc" title="TOY CAR COLLECTION">TOY CAR COLLECTION</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=339" class="card vip-card" title="Cutecar pack" style="animation-delay: 0.6s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688d425304676_screenshot_2025-03-18_011252-png.webp" alt="Cutecar pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Cutecar pack">Cutecar pack</h3>
+                            <p class="card-desc" title="Cutecar pack">Cutecar pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=338" class="card vip-card" title="EMS AMR-Paket" style="animation-delay: 0.65s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688d423189cb7_amr.webp" alt="EMS AMR-Paket" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="EMS AMR-Paket">EMS AMR-Paket</h3>
+                            <p class="card-desc" title="EMS AMR-Paket">EMS AMR-Paket</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=337" class="card vip-card" title="LSPD Fivem Vanilla Car Pack" style="animation-delay: 0.7s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688d421459a0a_20241109160137_1.webp" alt="LSPD Fivem Vanilla Car Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="LSPD Fivem Vanilla Car Pack">LSPD Fivem Vanilla Car Pack</h3>
+                            <p class="card-desc" title="LSPD Fivem Vanilla Car Pack">LSPD Fivem Vanilla Car Pack</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=336" class="card vip-card" title="Lore MD Pack" style="animation-delay: 0.75s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/688d41de7d383_image.webp" alt="Lore MD Pack" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                            <div class="absolute top-3 right-3">
+                                    <span class="vip-badge">VIP</span>
+                                </div>
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Lore MD Pack">Lore MD Pack</h3>
+                            <p class="card-desc" title="Lore MD Pack - Optimized Emergency | DC-CARS">Lore MD Pack - Optimized Emergency | DC-CARS</p>
+                        </div>
+                    </a>
+                            </div>
+
+            <a href="categorie.php?id=16" class="category-link inline-block text-[#f40552] text-lg font-medium">Voir tous →</a>
+        </section>
+                    <section class="mb-14">
+            <h2 class="section-title text-3xl font-semibold">
+                                    Weapons                            </h2>
+
+            <div class="resources-grid">
+                                                        <a href="ressource.php?id=37" class="card " title="Tonpsum" style="animation-delay: 0s">
+                        <div class="card-image-container">
+                            <img src="https://files.greenheberg.fr/uploads/685836849eef0_image.webp" alt="Tonpsum" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Tonpsum">Tonpsum</h3>
+                            <p class="card-desc" title="Tonpsum">Tonpsum</p>
+                        </div>
+                    </a>
+                                                        <a href="ressource.php?id=35" class="card " title="Pack - 150 Add-on Weapons" style="animation-delay: 0.05s">
+                        <div class="card-image-container">
+                            <img src="https://img.youtube.com/vi/HwLTzmaoV1U/mqdefault.jpg" alt="Pack - 150 Add-on Weapons" loading="lazy" onerror="this.onerror=null;this.src='https://i.goopics.net/3yr1uk.png';">
+                                                    </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title" title="Pack - 150 Add-on Weapons">Pack - 150 Add-on Weapons</h3>
+                            <p class="card-desc" title="Pack -150 Add-on Weapons">Pack -150 Add-on Weapons</p>
+                        </div>
+                    </a>
+                            </div>
+        </section>
+
+    
+</main><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="Widget de traduction" style="visibility: visible; box-sizing: content-box; width: 177px; height: 194px; display: none;"></iframe></body></html>

@@ -1,0 +1,636 @@
+<html lang="fr" style="height: 100%;"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FiveLeaks™</title>
+  <meta name="description" content="Explorez les ressources FiveM gratuites et leaks sur FiveLeaks.">
+  <meta name="keywords" content="FiveLeaks, FiveM, Scripts FiveM, Ressources FiveM, Leaks FiveM, Mapping FiveM, Mods FiveM, Scripts ESX, QBCore, FiveM France, FiveCFX, Téléchargement FiveM, Gabz, okok, Molo, FStore, Hunterhax, Loaf, JG Scripts, Codesign, Nopixel, Mythic, London Studios, Rcore, T1ger, Mxn Scripts">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="FiveCFX - Dev &amp; Leaks FiveM">
+  <meta property="og:description" content="Explorez les ressources FiveM gratuites et leaks sur FiveCFX.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="FiveLeaks">
+  <meta property="og:locale" content="fr_FR">
+    
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="https://fivecfx.com/logo.png" type="image/png">
+
+  
+
+
+  <style>
+            /* Apply Montserrat globally */
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    body {
+      background-color: #1c1b1c;
+      color: white;
+    }
+    .text-accent {
+      color: #f40552;
+    }
+    .bg-accent {
+      background-color: #f40552;
+    }
+    .hover\:bg-accent-dark:hover {
+      background-color: #c30444;
+    }
+  </style>
+<script>
+  const header = document.getElementById('mainHeader');
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > 20) {
+      header.classList.remove('bg-opacity-100');
+      header.classList.add('bg-opacity-70');
+    } else {
+      header.classList.add('bg-opacity-100');
+      header.classList.remove('bg-opacity-70');
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.invisible{visibility:hidden}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.left-0{left:0px}.top-0{top:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mb-10{margin-bottom:2.5rem}.mb-3{margin-bottom:0.75rem}.mb-6{margin-bottom:1.5rem}.ml-4{margin-left:1rem}.mt-1{margin-top:0.25rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.h-8{height:2rem}.w-48{width:12rem}.w-auto{width:auto}.w-full{width:100%}.max-w-7xl{max-width:80rem}.list-inside{list-style-position:inside}.list-disc{list-style-type:disc}.items-center{align-items:center}.justify-between{justify-content:space-between}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#f40552\]{--tw-border-opacity:1;border-color:rgb(244 5 82 / var(--tw-border-opacity, 1))}.border-blue-500\/20{border-color:rgb(59 130 246 / 0.2)}.border-green-500\/20{border-color:rgb(34 197 94 / 0.2)}.border-red-500\/20{border-color:rgb(239 68 68 / 0.2)}.bg-\[\#1c1b1c\]{--tw-bg-opacity:1;background-color:rgb(28 27 28 / var(--tw-bg-opacity, 1))}.bg-\[\#262526\]{--tw-bg-opacity:1;background-color:rgb(38 37 38 / var(--tw-bg-opacity, 1))}.bg-\[\#5865F2\]{--tw-bg-opacity:1;background-color:rgb(88 101 242 / var(--tw-bg-opacity, 1))}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-green-500\/10{background-color:rgb(34 197 94 / 0.1)}.bg-red-500\/10{background-color:rgb(239 68 68 / 0.1)}.bg-opacity-100{--tw-bg-opacity:1}.p-3{padding:0.75rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-left{text-align:left}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.italic{font-style:italic}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-green-300{--tw-text-opacity:1;color:rgb(134 239 172 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.opacity-0{opacity:0}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.hover\:bg-\[\#404EED\]:hover{--tw-bg-opacity:1;background-color:rgb(64 78 237 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.pgV-E-68K-A.L.W.O/am=hMA/d=0/rs=AN8SPfoMSCsz74287nno-gZmD_8fI6XKww/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.fr.MbEex8udwPM.O/am=AAAE/d=1/exm=el_conf/ed=1/rs=AN8SPfpuXaf7RpUsC6ZaBc_pJC7RYLmQVw/m=el_main"></script></head>
+
+
+<body class="font-sans" style="position: relative; min-height: 100%; top: 0px;">
+
+<header id="mainHeader" class="bg-[#1c1b1c] border-b-2 border-[#f40552] sticky top-0 z-50 transition-opacity duration-300 backdrop-blur bg-opacity-100">
+
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+<!-- Logo -->
+<a href="https://fivecfx.com" class="flex items-center space-x-3">
+  <span class="text-2xl font-bold text-accent">FiveLeaks</span>
+</a>
+
+
+
+    <!-- Nav Desktop -->
+    <nav class="hidden md:flex items-center space-x-6 relative">
+
+      <!-- Accueil -->
+      <a href="index.html" class="text-white hover:text-accent transition font-semibold">Accueil</a>
+
+    <a href="outils.html" class="text-white hover:text-accent transition font-semibold">Outils</a>
+
+        <a href="faq.html" class="text-white hover:text-accent transition font-semibold">FAQ</a>
+
+                <a href="https://fivecfx.com/vip.php" class="text-white hover:text-accent transition font-semibold">VIP</a>
+
+      <!-- Dropdown Catégories -->
+      <div class="relative" id="desktopCatDropdownWrapper">
+        <button id="desktopCatBtn" class="text-white hover:text-accent font-semibold flex items-center space-x-1 focus:outline-none" aria-expanded="false" aria-controls="desktopCatMenu" type="button">
+          <span>Catégories</span>
+          <i class="fa fa-chevron-down text-xs mt-0.5"></i>
+        </button>
+        <div id="desktopCatMenu" class="absolute left-0 mt-2 w-48 bg-[#262526] rounded shadow-lg opacity-0 invisible transition-opacity z-50">
+                      <a href="/categorie.php?id=1" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Bases            </a>
+                      <a href="/categorie.php?id=9" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Clothes            </a>
+                      <a href="/categorie.php?id=2" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Dumps            </a>
+                      <a href="/categorie.php?id=15" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Exclusif            </a>
+                      <a href="/categorie.php?id=4" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              HUD-UI            </a>
+                      <a href="/categorie.php?id=6" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Loading-Screens            </a>
+                      <a href="/categorie.php?id=14" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Mappings            </a>
+                      <a href="/categorie.php?id=5" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Menus            </a>
+                      <a href="/categorie.php?id=12" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Minimap            </a>
+                      <a href="/categorie.php?id=13" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Outils            </a>
+                      <a href="/categorie.php?id=11" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Pack graphique            </a>
+                      <a href="/categorie.php?id=3" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Scripts            </a>
+                      <a href="/categorie.php?id=7" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Template Discord            </a>
+                      <a href="/categorie.php?id=8" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Vehicules            </a>
+                      <a href="/categorie.php?id=16" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              VIP            </a>
+                      <a href="/categorie.php?id=10" class="block px-4 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+              Weapons            </a>
+                  </div>
+      </div>
+      
+ <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full font-medium text-white bg-[#5865F2] hover:bg-[#404EED] transition duration-200 space-x-2 text-sm">
+  <span>Discord</span>
+  <i class="fab fa-discord text-base"></i>
+</a>
+    </nav>
+
+
+
+    <!-- Burger menu mobile -->
+    <button id="mobileMenuBtn" aria-label="Menu" aria-expanded="false" class="md:hidden text-white focus:outline-none">
+      <i class="fa fa-bars fa-lg"></i>
+    </button>
+  </div>
+
+  <!-- Nav mobile (hidden by default) -->
+  <nav id="mobileMenu" class="hidden md:hidden bg-[#1c1b1c] border-t-2 border-[#f40552]">
+    <a href="/index.php" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">Accueil</a>
+
+        <a href="https://fivecfx.com/outils.php" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">Outils</a>
+
+        <a href="https://fivecfx.com/faq.php" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition">FAQ</a>
+    <a href="https://discord.gg/yau2HpGz" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 text-white hover:bg-accent hover:text-white transition flex items-center space-x-2">
+       <i class="fab fa-discord"></i><span>Discord</span>
+    </a>
+
+    <!-- Mobile Catégories Dropdown -->
+    <div class="">
+      <button id="mobileCatBtn" class="w-full px-4 py-3 text-left text-white hover:bg-accent hover:text-white transition flex justify-between items-center focus:outline-none" type="button" aria-expanded="false" aria-controls="mobileCatMenu">
+        <span>Catégories</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div id="mobileCatMenu" class="hidden bg-[#262526]">
+                  <a href="/categorie.php?id=1" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Bases          </a>
+                  <a href="/categorie.php?id=9" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Clothes          </a>
+                  <a href="/categorie.php?id=2" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Dumps          </a>
+                  <a href="/categorie.php?id=15" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Exclusif          </a>
+                  <a href="/categorie.php?id=4" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            HUD-UI          </a>
+                  <a href="/categorie.php?id=6" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Loading-Screens          </a>
+                  <a href="/categorie.php?id=14" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Mappings          </a>
+                  <a href="/categorie.php?id=5" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Menus          </a>
+                  <a href="/categorie.php?id=12" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Minimap          </a>
+                  <a href="/categorie.php?id=13" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Outils          </a>
+                  <a href="/categorie.php?id=11" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Pack graphique          </a>
+                  <a href="/categorie.php?id=3" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Scripts          </a>
+                  <a href="/categorie.php?id=7" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Template Discord          </a>
+                  <a href="/categorie.php?id=8" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Vehicules          </a>
+                  <a href="/categorie.php?id=16" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            VIP          </a>
+                  <a href="/categorie.php?id=10" class="block px-6 py-2 text-gray-300 hover:bg-accent hover:text-white transition">
+            Weapons          </a>
+              </div>
+    </div>
+
+  </nav>
+</header>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr',
+      includedLanguages: 'en,fr,es,de,it,pt,ar,tr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+  #custom_translate_widget {
+    display: flex;
+    align-items: center;
+    background: #262626;
+    border-radius: 40px;
+    padding: 6px 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.3);
+    width: fit-content;
+    gap: 10px;
+  }
+
+  .translate-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+  }
+
+  .translate-label {
+    white-space: nowrap;
+  }
+
+  #google_translate_element {
+    display: inline-block;
+  }
+
+  .goog-te-gadget {
+    height: auto !important;
+    font-size: 0 !important;
+  }
+
+  .goog-te-combo {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .goog-logo-link,
+  .goog-te-gadget span,
+  #google_translate_element a {
+    display: none !important;
+  }
+
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+  body {
+    top: 0 !important;
+  }
+</style>
+
+
+<script>
+  // Desktop catégories dropdown toggle
+  const desktopCatBtn = document.getElementById('desktopCatBtn');
+  const desktopCatMenu = document.getElementById('desktopCatMenu');
+
+  desktopCatBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isOpen = desktopCatMenu.classList.contains('opacity-100');
+    if (isOpen) {
+      desktopCatMenu.classList.remove('opacity-100', 'visible');
+      desktopCatMenu.classList.add('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      desktopCatMenu.classList.add('opacity-100', 'visible');
+      desktopCatMenu.classList.remove('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!desktopCatBtn.contains(e.target) && !desktopCatMenu.contains(e.target)) {
+      desktopCatMenu.classList.remove('opacity-100', 'visible');
+      desktopCatMenu.classList.add('opacity-0', 'invisible');
+      desktopCatBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileCatBtn = document.getElementById('mobileCatBtn');
+  const mobileCatMenu = document.getElementById('mobileCatMenu');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu.classList.add('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  mobileCatBtn.addEventListener('click', () => {
+    const isOpen = !mobileCatMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileCatMenu.classList.add('hidden');
+      mobileCatBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileCatMenu.classList.remove('hidden');
+      mobileCatBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+</script>
+
+<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Texte d'origine</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Évaluez cette traduction</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Votre avis nous aidera à améliorer Google&nbsp;Traduction</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Bonne traduction" aria-label="Bonne traduction" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mauvaise traduction" aria-label="Mauvaise traduction" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div><main class="max-w-7xl mx-auto px-10 py-6 mb-10">
+
+
+    <style>
+        .faq-container {
+            animation: fadeIn 0.8s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .faq-item {
+            background: linear-gradient(135deg, #1f1f1f 0%, #1a1a1a 100%);
+            border: 2px solid transparent;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            animation: slideInUp 0.6s ease forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .faq-item:nth-child(1) { animation-delay: 0.1s; }
+        .faq-item:nth-child(2) { animation-delay: 0.2s; }
+        .faq-item:nth-child(3) { animation-delay: 0.3s; }
+        .faq-item:nth-child(4) { animation-delay: 0.4s; }
+        .faq-item:nth-child(5) { animation-delay: 0.5s; }
+        
+        @keyframes slideInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .faq-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 0.75rem;
+            padding: 2px;
+            background: linear-gradient(45deg, #f40552, #ff6b35, #f40552);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .faq-item:hover::before {
+            opacity: 1;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(244, 5, 82, 0.15), 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .faq-button {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .faq-button:hover {
+            background: rgba(244, 5, 82, 0.1);
+        }
+        
+        .faq-question {
+            background: linear-gradient(135deg, #f40552 0%, #ff6b35 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover .faq-question {
+            background: linear-gradient(135deg, #ff6b35 0%, #f40552 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-arrow {
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+        
+        .faq-arrow.rotated {
+            transform: rotate(180deg);
+            color: #f40552;
+        }
+        
+        .faq-answer {
+            transition: all 0.4s ease;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+        
+        .faq-answer.show {
+            max-height: 500px;
+            opacity: 1;
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+        
+        .page-title {
+            background: linear-gradient(135deg, #f40552 0%, #ff6b35 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-shift 3s ease-in-out infinite;
+        }
+        
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .faq-emoji {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-5px); }
+            60% { transform: translateY(-3px); }
+        }
+    </style>
+
+
+<div class="faq-container">
+    <h1 class="page-title text-3xl font-bold mb-6 mt-6">
+        <span class="faq-emoji">📖</span>FAQ sur FiveLeaks
+    </h1>
+    <p class="text-gray-400 mb-6">Voici les réponses aux questions les plus fréquentes concernant FiveLeaks</p>
+
+    <div class="space-y-4">
+        <!-- Question 1 -->
+        <div class="faq-item rounded-xl overflow-hidden">
+            <button onclick="toggleFAQ(0)" class="faq-button w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none">
+                <span class="faq-question font-semibold">🎮 C'est quoi FiveLeaks ?</span>
+                <span class="faq-arrow text-gray-400">▼</span>
+            </button>
+            <div class="faq-answer px-6 text-gray-300 hidden">
+                <div class="mt-2">
+                    <strong>FiveLeaks</strong> est une plateforme complète dédiée à l'univers <strong>FiveM</strong> qui regroupe :
+                    <ul class="list-disc list-inside mt-2 space-y-1">
+                        <li>Un <strong>serveur Discord</strong> communautaire actif</li>
+                        <li>Un <strong>site web</strong> de partage de ressources</li>
+                        <li>Une <strong>communauté</strong> d'entraide et de développement</li>
+                        <li>Des <strong>ressources gratuites</strong> pour créer votre serveur GTA RP</li>
+                    </ul>
+                    <p class="mt-2 text-sm italic">FiveM permet de transformer GTA 5 en expérience Roleplay multijoueur personnalisée.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item rounded-xl overflow-hidden">
+            <button onclick="toggleFAQ(1)" class="faq-button w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none">
+                <span class="faq-question font-semibold">👑 Qui est à l'origine de FiveLeaks ?</span>
+                <span class="faq-arrow text-gray-400">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 text-gray-300">
+                <div class="mt-2">
+                    <strong>"Stuxnet"</strong> est le <strong>fondateur et créateur unique</strong> du projet FiveLeaks.
+                    <p class="mt-2">Il a développé cette plateforme pour rassembler la communauté FiveM francophone et faciliter l'accès aux ressources de développement de serveurs.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item rounded-xl overflow-hidden">
+            <button onclick="toggleFAQ(2)" class="faq-button w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none">
+                <span class="faq-question font-semibold">⚙️ Comment fonctionne FiveLeaks ?</span>
+                <span class="faq-arrow text-gray-400">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 text-gray-300">
+                <div class="mt-2">
+                    <strong>Notre écosystème fonctionne sur deux piliers principaux :</strong>
+                    <div class="mt-3 space-y-3">
+                        <div>
+                            <strong>🔗 Discord :</strong> <a href="https://discord.gg" class="text-accent hover:underline">discord.gg</a>
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li>Entraide technique en temps réel</li>
+                                <li>Support communautaire</li>
+                                <li>Partage d'expériences et conseils</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>🌐 Site web :</strong>
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li>Téléchargement simplifié des ressources</li>
+                                <li>Liens directs sans redirections</li>
+                                <li>Parfois Clictune pour une rémunération légère</li>
+                                <li>Fini les liens Linkvertise et Adfly fastidieux !</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item rounded-xl overflow-hidden">
+            <button onclick="toggleFAQ(3)" class="faq-button w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none">
+                <span class="faq-question font-semibold">☁️ Comment sont hébergées les ressources ?</span>
+                <span class="faq-arrow text-gray-400">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 text-gray-300">
+                <div class="mt-2">
+                    <strong>Nous privilégions la pérennité et la fiabilité :</strong>
+                    <div class="mt-3 space-y-2">
+                        <div>
+                            <strong>📁 Hébergeurs principaux :</strong>
+                            <ul class="list-disc list-inside ml-4 mt-1 text-sm">
+                                <li><strong>Files by GreenHeberg</strong> - Stockage permanent</li>
+                                <li><strong>Catbox.moe</strong> - Hébergement à vie</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>🔄 Système de miroirs :</strong>
+                            <p class="ml-4 text-sm">Liens GoFile en complément (attention à l'expiration)</p>
+                        </div>
+                        <div class="bg-green-500/10 border border-green-500/20 rounded-lg p-3 mt-3">
+                            <p class="text-green-300 text-sm">
+                                <strong>✅ Avantage :</strong> Plus besoin de chercher sur plusieurs Discord pour retrouver une ressource !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item rounded-xl overflow-hidden">
+            <button onclick="toggleFAQ(4)" class="faq-button w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none">
+                <span class="faq-question font-semibold">🛡️ Comment vérifier la sécurité des ressources ?</span>
+                <span class="faq-arrow text-gray-400">▼</span>
+            </button>
+            <div class="faq-answer hidden px-6 text-gray-300">
+                <div class="mt-2">
+                    <div class="bg-red-500/10 border border-red-500/20 rounded-lg p-3 mb-3">
+                        <p class="text-red-300 text-sm">
+                            <strong>⚠️ Important :</strong> FiveLeaks partage des ressources mais n'est pas responsable du code malveillant éventuel.
+                        </p>
+                    </div>
+                    
+                    <strong>🔍 Méthodes de vérification recommandées :</strong>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-sm">
+                        <li><strong>VirusTotal</strong> - Scan automatique des fichiers</li>
+                        <li><strong>Détecteurs anti-backdoors</strong> spécialisés FiveM</li>
+                        <li><strong>Inspection manuelle</strong> du code source</li>
+                        <li><strong>Tutoriels</strong> de détection de backdoors</li>
+                    </ul>
+                    
+                    <div class="bg-blue-500/10 border border-blue-500/20 rounded-lg p-3 mt-3">
+                        <p class="text-blue-300 text-sm">
+                            <strong>💡 Conseil :</strong> Toujours examiner les ressources suspectes avant installation sur votre serveur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  function toggleFAQ(index) {
+    const answers = document.querySelectorAll('.faq-answer');
+    const arrows = document.querySelectorAll('.faq-arrow');
+
+    answers.forEach((answer, i) => {
+      if (i === index) {
+        if (answer.classList.contains('hidden')) {
+          answer.classList.remove('hidden');
+          answer.classList.add('show');
+          arrows[i].classList.add('rotated');
+        } else {
+          answer.classList.remove('show');
+          answer.classList.add('hidden');
+          arrows[i].classList.remove('rotated');
+        }
+      } else {
+        answer.classList.remove('show');
+        answer.classList.add('hidden');
+        arrows[i].classList.remove('rotated');
+      }
+    });
+  }
+</script>
+
+</main><div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="Widget de traduction" style="visibility: visible; box-sizing: content-box; width: 177px; height: 194px; display: none;"></iframe></body></html>
